@@ -1,0 +1,10 @@
+/nbproject/private/
+/debian/php-flexibee-config/
+/debian/php-flexibee-config.debhelper.log
+/debian/php-flexibee-config.substvars
+/build-stamp
+/testing/PHPUnit/build/
+/debian/flexplorer/
+/vendor/
+/composer.lock
+/.vagrant/
