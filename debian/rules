@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+	sed -i -e 's/..\/vendor/\/var\/lib\/php-flexibee-config/g' 	     debian/php-flexibee-config/usr/lib/php-flexibee-config/php-flexibee-checker.php
+	sed -i -e 's/..\/vendor/\/var\/lib\/php-flexibee-config/g' 	     debian/php-flexibee-config/usr/lib/php-flexibee-config/php-flexibee-config.php
+	sed -i -e 's/\.\./\/etc\/flexibee/g' 	     debian/php-flexibee-config/usr/lib/php-flexibee-config/php-flexibee-checker.php
+	sed -i -e 's/\.\./\/etc\/flexibee/g' 	     debian/php-flexibee-config/usr/lib/php-flexibee-config/php-flexibee-config.php
+
+override_dh_clean:
+	debconf-updatepo
+	dh_clean

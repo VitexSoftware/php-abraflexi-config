@@ -1,0 +1,8 @@
+#!/bin/bash
+# rm script for system.spoje.net
+
+rm -f /usr/share/php-flexibee-config/composer.lock
+
+#DEBHELPER#
+
+exit 0

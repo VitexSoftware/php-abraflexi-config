@@ -1,0 +1,17 @@
+Source: php-flexibee-config
+Build-Depends: debhelper (>= 7.0.50~),po-debconf
+Standards-Version: 3.8.4
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Uploaders: Vitex <vitex@hippy.cz>
+Priority: optional
+Homepage: https://github.com/VitexSoftware/
+
+Package: php-flexibee-config
+Depends: ${misc:Depends},flexipeehp (>= 1.8.5), composer, php-cli
+Recommends: flexibee-server
+Architecture: all
+Section: web
+Priority: optional
+Description: config and configurator for php-flexibee
+ Setup and probe shared configuration for FlexiPeeHP based
+ tools

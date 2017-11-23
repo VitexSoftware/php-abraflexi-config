@@ -1,0 +1,6 @@
+#!/bin/bash
+php -f /usr/lib/php-flexibee-config/php-flexibee-config.php $1 $2
+
+
+
+

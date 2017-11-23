@@ -1,0 +1,14 @@
+{
+    "name": "vendor/php-flexibee-config",
+    "description": "Description of project php-flexibee-config.",
+    "authors": [
+        {
+            "name": "vitex",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "vitexsoftware/ease-framework": "dev-master",
+        "spoje.net/flexipeehp": "dev-master"
+    }
+}

@@ -1,0 +1,55 @@
+.TH "myprogram" "1" "0.0.0" "Me" "My set of programs"
+.SH "NAME"
+php-flexibee-config - Configure php-flexibee
+.br
+.SH "SYNTAX"
+php-flexibee-config
+.br
+php-flexibee-config <key>
+.br
+php-flexibee-config <key> <value>
+.br
+
+.SH "DESCRIPTION"
+Show or modify php-flexibee configuration
+.br
+.SH "OPTIONS"
+<key>
+.br
+		Show current <key> configured value.
+.br
+
+<value>
+.br
+		Set new value for current configuration
+.br
+.SH "FILES"
+\fI/etc/\fRflexibee/client.json
+.br
+.SH "ENVIRONMENT VARIABLES"
+.SH "EXAMPLES"
+To show current configuration type:
+.br
+
+php-flexibee-config
+.br
+
+To show only one value specifi its name
+.br
+
+php-flexibee-config FLEXIBEE_URL
+.br
+
+To change configured value add its value
+.br
+
+php-flexibee-config FLEXIBEE_PASSWORD xagdfsd
+.br
+
+.SH "AUTHORS"
+Vítězslav Dvořák <info@vitexsoftware.cz>
+.br
+
+.SH "SEE ALSO"
+php-flexibee-checker(2)
+.br

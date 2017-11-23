@@ -1,0 +1,4 @@
+debian/conf/composer.json       usr/share/php-flexibee-config/
+src/*			        usr/lib/php-flexibee-config/
+bin/*                           usr/bin/
+client.json                     etc/flexibee/

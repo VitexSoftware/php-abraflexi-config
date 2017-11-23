@@ -1,0 +1,38 @@
+{
+    "name": "flexibee-config",
+    "description": "Configuration and configurator for FlexiPeeHP based tools",
+    "type": "project",
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+	"vendor-dir": "/var/lib/php-flexibee-config"
+    },
+    "require": {
+        "php": ">= 5.5.9",
+        "flexipeehp": "*",
+        "ease-framework": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/usr/share/php/Ease",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "/usr/share/php/FlexiPeeHP",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+
+}
