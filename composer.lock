@@ -262,12 +262,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Spoje-NET/FlexiPeeHP.git",
-                "reference": "fdb64f6a4f615017930261af6bb86e62556f6aed"
+                "reference": "33b9749647f3312b4cf5a21c7dded2a24c40c636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Spoje-NET/FlexiPeeHP/zipball/fdb64f6a4f615017930261af6bb86e62556f6aed",
-                "reference": "fdb64f6a4f615017930261af6bb86e62556f6aed",
+                "url": "https://api.github.com/repos/Spoje-NET/FlexiPeeHP/zipball/33b9749647f3312b4cf5a21c7dded2a24c40c636",
+                "reference": "33b9749647f3312b4cf5a21c7dded2a24c40c636",
                 "shasum": ""
             },
             "require": {
@@ -299,7 +299,7 @@
                 }
             ],
             "description": "PHP Based Library for easy interaction with czech accounting system Flexibee.",
-            "time": "2017-11-16T22:01:41+00:00"
+            "time": "2018-01-15T22:54:20+00:00"
         },
         {
             "name": "vitexsoftware/ease-framework",
@@ -307,12 +307,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/VitexSoftware/EaseFramework.git",
-                "reference": "3443d7dafa87d50df3c8c223dafd724a0f1f6567"
+                "reference": "56555c79959725079c5892d3ebd749d21e5b1242"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VitexSoftware/EaseFramework/zipball/3443d7dafa87d50df3c8c223dafd724a0f1f6567",
-                "reference": "3443d7dafa87d50df3c8c223dafd724a0f1f6567",
+                "url": "https://api.github.com/repos/VitexSoftware/EaseFramework/zipball/56555c79959725079c5892d3ebd749d21e5b1242",
+                "reference": "56555c79959725079c5892d3ebd749d21e5b1242",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -358,7 +358,7 @@
             ],
             "description": "An PHP Framework for Ease of writing Applications",
             "homepage": "http://v.s.cz/ease.php",
-            "time": "2017-11-22T16:48:45+00:00"
+            "time": "2018-01-23T14:02:07+00:00"
         }
     ],
     "packages-dev": [],

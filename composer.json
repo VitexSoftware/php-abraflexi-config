@@ -1,10 +1,10 @@
 {
     "name": "vendor/php-flexibee-config",
-    "description": "Description of project php-flexibee-config.",
+    "description": "Configurator and configuration shared with several flexibee-tools",
     "authors": [
         {
-            "name": "vitex",
-            "email": "your@email.here"
+            "name": "Vítězslav Dvořák",
+            "email": "info@vitexsoftware.cz"
         }
     ],
     "require": {

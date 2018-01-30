@@ -9,7 +9,13 @@ set -e
 
     fi
 
-php-flexibee-checker
+
+if [ ! -f /usr/bin/php-flexibee-checker ]; then
+    php-flexibee-checker
+fi
+
+
+
 
 #DEBHELPER#
 

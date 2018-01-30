@@ -1,6 +1,6 @@
-php-flexibee-config (0.0) UNRELEASED; urgency=medium
+php-flexibee-config (0.2) UNRELEASED; urgency=medium
 
   * Initial release
+  * Dependencies Fix
 
-
- -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 23 Nov 2017 19:28:34 +0100
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Tue, 30 Jan 2018 14:41:51 +0100

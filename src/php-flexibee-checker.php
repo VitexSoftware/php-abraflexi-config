@@ -1,7 +1,7 @@
 <?php
 require_once '../vendor/autoload.php';
 define('EASE_APPNAME', 'php-flexibee-checker');
-define('EASE_LOGGER', 'console');
+define('EASE_LOGGER', 'console|syslog');
 
 $shared = new \Ease\Shared();
 $shared->loadConfig('../client.json');
