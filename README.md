@@ -5,6 +5,7 @@ php-flexibee-config
 
 Konfigurátor a sdílená konfigurace pro aplikace využívající php-flexibee
 
+
 Debian/Ubuntu
 -------------
 
@@ -14,4 +15,9 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
     echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
     aptitude update
     aptitude install php-flexibee-config
+
+Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
+
+  * php-flexibee-config  - nástroj příkazové řádky pro změnu hodnot v /etc/flexibee/client.json
+  * php-flexibee-checker - slouží k otestování nastavené konfigurace
 
