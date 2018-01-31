@@ -21,3 +21,11 @@ Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
   * php-flexibee-config  - nástroj příkazové řádky pro změnu hodnot v /etc/flexibee/client.json
   * php-flexibee-checker - slouží k otestování nastavené konfigurace
 
+Závislosti
+----------
+
+Tento nástroj ke svojí funkci využívá následující knihovny:
+
+ * [**EasePHP Framework**](https://github.com/VitexSoftware/EaseFramework) - pomocné funkce např. logování
+ * [**FlexiPeeHP**](https://github.com/Spoje-NET/FlexiPeeHP)        - komunikace s [FlexiBee](https://flexibee.eu/)
+
