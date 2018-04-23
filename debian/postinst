@@ -10,7 +10,7 @@ set -e
     fi
 
 
-if [ ! -f /usr/bin/php-flexibee-checker ]; then
+if [ -f /usr/bin/php-flexibee-checker ]; then
     php-flexibee-checker
 fi
 
