@@ -5,7 +5,7 @@ php-flexibee-config
 
 Konfigurátor a sdílená konfigurace pro aplikace využívající php-flexibee
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JJW6JAiqgAE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Použití](http://img.youtube.com/vi/JJW6JAiqgAE/0.jpg)](http://www.youtube.com/watch?v=JJW6JAiqgAE)
 
 Debian/Ubuntu
 -------------
@@ -17,7 +17,7 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
     aptitude update
     aptitude install php-flexibee-config
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pToYZfh3dFE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Instalace](http://img.youtube.com/vi/pToYZfh3dFE/0.jpg)](http://www.youtube.com/watch?v=pToYZfh3dFE)
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
 
