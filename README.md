@@ -18,8 +18,9 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
 
-  * php-flexibee-config  - nástroj příkazové řádky pro změnu hodnot v /etc/flexibee/client.json
-  * php-flexibee-checker - slouží k otestování nastavené konfigurace
+  * php-flexibee-config      - nástroj příkazové řádky pro změnu hodnot v /etc/flexibee/client.json
+  * php-flexibee-checker     - slouží k otestování nastavené konfigurace
+  * php-flexibee-reconfigure - dialogy k zadání přihlašovacích údajů
 
 Závislosti
 ----------

@@ -1,0 +1,7 @@
+#!/bin/bash
+dpkg-reconfigure php-flexibee-config
+
+
+
+
+
