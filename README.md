@@ -29,3 +29,8 @@ Tento nástroj ke svojí funkci využívá následující knihovny:
  * [**EasePHP Framework**](https://github.com/VitexSoftware/EaseFramework) - pomocné funkce např. logování
  * [**FlexiPeeHP**](https://github.com/Spoje-NET/FlexiPeeHP)        - komunikace s [FlexiBee](https://flexibee.eu/)
 
+Balíček je využíván těmito aplikacemi:
+
+ * [flexibee-testing-tools]( https://github.com/VitexSoftware/FlexiBee-TestingTools )
+ * [php-flexibee-reminder]( https://github.com/VitexSoftware/php-flexibee-reminder)
+ * [php-flexibee-matcher]( https://github.com/VitexSoftware/php-flexibee-matcher )
