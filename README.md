@@ -6,8 +6,8 @@ php-flexibee-config
 Konfigurátor a sdílená konfigurace pro aplikace využívající php-flexibee
 
 
-Debian/Ubuntu
--------------
+Instalace Debian/Ubuntu
+-----------------------
 
 Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
 
@@ -15,6 +15,9 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
     echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
     aptitude update
     aptitude install php-flexibee-config
+
+
+![Install Upgrade](https://raw.githubusercontent.com/VitexSoftware/php-flexibee-config/master/doc/install-upgrade.png "Install Upgrade Screenshot")
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
 
@@ -35,3 +38,4 @@ Balíček je využíván těmito aplikacemi:
  * [flexibee-testing-tools]( https://github.com/VitexSoftware/FlexiBee-TestingTools )
  * [php-flexibee-reminder]( https://github.com/VitexSoftware/php-flexibee-reminder)
  * [php-flexibee-matcher]( https://github.com/VitexSoftware/php-flexibee-matcher )
+ * [monitoring-plugins-flexibee]( https://github.com/VitexSoftware/monitoring-plugins-flexibee )
