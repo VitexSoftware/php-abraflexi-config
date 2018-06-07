@@ -14,13 +14,15 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
 
     wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
     echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
-    aptitude update
-    aptitude install php-flexibee-config
+    apt update
+    apt install php-flexibee-config
 
+Youtube:
+[![Instalace](http://img.youtube.com/vi/pToYZfh3dFE/0.jpg)](http://www.youtube.com/watch?v=pToYZfh3dFE)
 
+Screenshot:
 ![Install Upgrade](https://raw.githubusercontent.com/VitexSoftware/php-flexibee-config/master/doc/install-upgrade.png "Install Upgrade Screenshot")
 
-[![Instalace](http://img.youtube.com/vi/pToYZfh3dFE/0.jpg)](http://www.youtube.com/watch?v=pToYZfh3dFE)
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
 
