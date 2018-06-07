@@ -5,6 +5,7 @@ php-flexibee-config
 
 Konfigurátor a sdílená konfigurace pro aplikace využívající php-flexibee
 
+[![Použití](http://img.youtube.com/vi/JJW6JAiqgAE/0.jpg)](http://www.youtube.com/watch?v=JJW6JAiqgAE)
 
 Instalace Debian/Ubuntu
 -----------------------
@@ -18,6 +19,8 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
 
 
 ![Install Upgrade](https://raw.githubusercontent.com/VitexSoftware/php-flexibee-config/master/doc/install-upgrade.png "Install Upgrade Screenshot")
+
+[![Instalace](http://img.youtube.com/vi/pToYZfh3dFE/0.jpg)](http://www.youtube.com/watch?v=pToYZfh3dFE)
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
 
