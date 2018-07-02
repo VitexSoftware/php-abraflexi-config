@@ -1,3 +1,9 @@
+php-flexibee-config (0.7) experimental; urgency=medium
+
+  * binaries renamed
+
+ -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Mon, 02 Jul 2018 23:45:10 +0200
+
 php-flexibee-config (0.6) experimental; urgency=medium
 
   * Initial release
