@@ -13,8 +13,8 @@ if [ -f composer.lock ] ; then
 fi
 composer --no-plugins --no-scripts --no-dev -o install
 
-if [ -f /usr/bin/php-flexibee-checker ]; then
-    php-flexibee-checker
+if [ -f /usr/bin/flexibee-client-checker ]; then
+    flexibee-client-checker
 fi
 
 
