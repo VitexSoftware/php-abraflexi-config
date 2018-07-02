@@ -2,6 +2,7 @@
 /debian/php-flexibee-config/
 /debian/php-flexibee-config.debhelper.log
 /debian/php-flexibee-config.substvars
+/debian/files
 /build-stamp
 /testing/PHPUnit/build/
 /debian/flexplorer/
