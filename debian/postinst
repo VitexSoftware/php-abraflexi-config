@@ -3,6 +3,12 @@
 
 set -e
 
+cd /usr/share/php-flexibee-config
+if [ -f composer.lock ] ; then
+    rm -f composer.lock
+fi
+composer --no-plugins --no-scripts --no-dev -o install
+
 if [ "$1" = "configure" ]; then
     . /usr/share/debconf/confmodule
     db_get php-flexibee-config/FLEXIBEE_URL
@@ -15,11 +21,6 @@ if [ "$1" = "configure" ]; then
     flexibee-client-config FLEXIBEE_COMPANY $RET
 fi
 
-cd /usr/share/php-flexibee-config
-if [ -f composer.lock ] ; then
-    rm -f composer.lock
-fi
-composer --no-plugins --no-scripts --no-dev -o install
 
 if [ -f /usr/bin/flexibee-client-checker ]; then
     flexibee-client-checker
