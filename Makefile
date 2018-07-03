@@ -17,5 +17,8 @@ deb:
 	dch -i
 	debuild -i -us -uc -b
 
+dimage:
+	docker build -t vitexsoftware/flexibee-client-config .
+
 .PHONY : install
 	

@@ -7,6 +7,11 @@ Konfigurátor a sdílená konfigurace pro aplikace využívající php-flexibee
 
 [![Použití](http://img.youtube.com/vi/JJW6JAiqgAE/0.jpg)](http://www.youtube.com/watch?v=JJW6JAiqgAE)
 
+Instalace Docker
+----------------
+
+    docker pull vitexsoftware/flexibee-client-config
+
 Instalace Debian/Ubuntu
 -----------------------
 
@@ -26,9 +31,9 @@ Screenshot:
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:
 
-  * **php-flexibee-config**      - nástroj příkazové řádky pro změnu hodnot v /etc/flexibee/client.json
-  * **php-flexibee-checker**     - slouží k otestování nastavené konfigurace
-  * **php-flexibee-reconfigure** - dialogy k zadání přihlašovacích údajů
+  * **flexibee-client-config**         - nástroj příkazové řádky pro změnu hodnot v /etc/flexibee/client.json
+  * **flexibee-client-config-checker** - slouží k otestování nastavené konfigurace
+  * **flexibee-client-reconfigure**    - dialogy k zadání přihlašovacích údajů
 
 Závislosti
 ----------

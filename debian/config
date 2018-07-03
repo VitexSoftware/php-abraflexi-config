@@ -3,32 +3,14 @@
 
 db_version 2.0
 
-cd /usr/share/php-flexibee-config
-if [ -f composer.lock ] ; then
-    rm -f composer.lock
-fi
-composer --no-dev --no-plugins --no-scripts -o install
-
 db_input critical php-flexibee-config/FLEXIBEE_URL || true
 db_go
-db_get php-flexibee-config/FLEXIBEE_URL
-flexibee-client-config FLEXIBEE_URL $RET
-
 
 db_input critical php-flexibee-config/FLEXIBEE_LOGIN || true
 db_go
-db_get php-flexibee-config/FLEXIBEE_LOGIN
-flexibee-client-config FLEXIBEE_LOGIN $RET
-
 
 db_input critical php-flexibee-config/FLEXIBEE_PASSWORD || true
 db_go
-db_get php-flexibee-config/FLEXIBEE_PASSWORD
-flexibee-client-config FLEXIBEE_PASSWORD $RET
-
 
 db_input critical php-flexibee-config/FLEXIBEE_COMPANY || true
 db_go
-db_get php-flexibee-config/FLEXIBEE_COMPANY
-flexibee-client-config FLEXIBEE_COMPANY $RET
-

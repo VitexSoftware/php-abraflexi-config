@@ -5,6 +5,14 @@ set -e
 
 if [ "$1" = "configure" ]; then
     . /usr/share/debconf/confmodule
+    db_get php-flexibee-config/FLEXIBEE_URL
+    flexibee-client-config FLEXIBEE_URL $RET
+    db_get php-flexibee-config/FLEXIBEE_LOGIN
+    flexibee-client-config FLEXIBEE_LOGIN $RET
+    db_get php-flexibee-config/FLEXIBEE_PASSWORD
+    flexibee-client-config FLEXIBEE_PASSWORD $RET
+    db_get php-flexibee-config/FLEXIBEE_COMPANY
+    flexibee-client-config FLEXIBEE_COMPANY $RET
 fi
 
 cd /usr/share/php-flexibee-config
