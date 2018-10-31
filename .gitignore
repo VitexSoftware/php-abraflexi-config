@@ -13,3 +13,5 @@
 /php-flexibee-config-build-deps_0.0_all.deb
 /debian/php-flexibee-config.postrm.debhelper
 /debian/debhelper-build-stamp
+/deb/
+/debian/.debhelper/

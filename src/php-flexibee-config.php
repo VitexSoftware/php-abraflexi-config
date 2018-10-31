@@ -7,7 +7,7 @@ $exitcode   = 0;
 
 if (file_exists($configFile)) {
     $shared = new \Ease\Shared();
-    $shared->loadConfig($configFile,true);
+    $shared->loadConfig($configFile, true);
 }
 
 switch ($argc) {
