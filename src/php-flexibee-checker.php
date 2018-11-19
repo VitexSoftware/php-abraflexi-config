@@ -4,7 +4,7 @@ define('EASE_APPNAME', 'php-flexibee-checker');
 define('EASE_LOGGER', 'console|syslog');
 
 $shared = new \Ease\Shared();
-$shared->loadConfig('../client.json');
+$shared->loadConfig('../client.json',true);
 
 $checker   = new FlexiPeeHP\Company();
 $infoRaw   = $checker->getFlexiData();

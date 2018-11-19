@@ -1,20 +1,30 @@
 #!/bin/sh
-# postinst script for monitoring-plugins-flexibee
+# postinst script for php-flexibee-config
 
 set -e
 
-    if [ "$1" = "configure" ]; then
+cd /usr/share/php-flexibee-config
+if [ -f composer.lock ] ; then
+    rm -f composer.lock
+fi
+composer --no-plugins --no-scripts --no-dev -o install
 
+if [ "$1" = "configure" ]; then
     . /usr/share/debconf/confmodule
-
-    fi
-
-
-if [ -f /usr/bin/php-flexibee-checker ]; then
-    php-flexibee-checker
+    db_get php-flexibee-config/FLEXIBEE_URL
+    flexibee-client-config FLEXIBEE_URL $RET
+    db_get php-flexibee-config/FLEXIBEE_LOGIN
+    flexibee-client-config FLEXIBEE_LOGIN $RET
+    db_get php-flexibee-config/FLEXIBEE_PASSWORD
+    flexibee-client-config FLEXIBEE_PASSWORD $RET
+    db_get php-flexibee-config/FLEXIBEE_COMPANY
+    flexibee-client-config FLEXIBEE_COMPANY $RET
 fi
 
 
+if [ -f /usr/bin/flexibee-client-checker ]; then
+    flexibee-client-checker
+fi
 
 
 #DEBHELPER#
