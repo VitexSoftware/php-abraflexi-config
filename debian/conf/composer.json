@@ -1,5 +1,5 @@
     {
-    "name": "flexibee-config",
+    "name": "deb/flexibee-config",
     "description": "Configuration and configurator for FlexiPeeHP based tools",
     "type": "project",
     "version": "0.7",
@@ -14,9 +14,8 @@
 	"vendor-dir": "/var/lib/php-flexibee-config"
     },
     "require": {
-        "php": ">= 5.5.9",
-        "flexipeehp": "*",
-        "ease-framework": "*"
+        "deb/flexipeehp": "*",
+        "deb/ease-framework": "*"
     },
     "repositories": [
         {
