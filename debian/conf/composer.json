@@ -14,8 +14,8 @@
 	"vendor-dir": "/var/lib/php-flexibee-config"
     },
     "require": {
-        "deb/flexipeehp": "*",
-        "deb/ease-framework": "*"
+        "deb/ease-core": "*",
+        "deb/flexibee": "*"
     },
     "repositories": [
         {
@@ -27,7 +27,7 @@
         },
         {
             "type": "path",
-            "url": "/usr/share/php/FlexiPeeHP",
+            "url": "/usr/share/php/flexibee",
             "options": {
                 "symlink": true
             }
