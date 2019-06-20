@@ -1,8 +1,8 @@
-php-flexibee-config (0.9) UNRELEASED; urgency=medium
+php-flexibee-config (0.10) UNRELEASED; urgency=medium
 
   * ease-core based
 
- -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Thu, 06 Jun 2019 15:28:44 +0200
+ -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Thu, 06 Jun 2019 15:47:44 +0200
 
 php-flexibee-config (0.7-6) UNRELEASED; urgency=medium
 
