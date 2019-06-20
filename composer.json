@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "spoje.net/flexibee": "dev-master"
+        "vitexsoftware/ease-framework": "dev-master",
+        "spoje.net/flexipeehp": "dev-master"
     }
 }
