@@ -8,7 +8,7 @@ $shared->loadConfig('../client.json',true);
 
 $checker   = new FlexiPeeHP\Company();
 $infoRaw   = $checker->getFlexiData();
-$info      = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? $checker->reindexArrayBy($infoRaw, 'dbNazev') : [];
+$info      = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
 $myCompany = $checker->getCompany();
 $checker->logBanner();
 

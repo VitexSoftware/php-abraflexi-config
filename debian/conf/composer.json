@@ -27,7 +27,7 @@
         },
         {
             "type": "path",
-            "url": "/usr/share/php/flexibee",
+            "url": "/usr/share/php/FlexiPeeHP",
             "options": {
                 "symlink": true
             }
