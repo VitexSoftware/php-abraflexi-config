@@ -1,8 +1,19 @@
-php-flexibee-config (0.10) UNRELEASED; urgency=medium
+php-flexibee-config (0.22) UNRELEASED; urgency=medium
 
+  * Try to use existing config file as defaults 
+  * Works now
+
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 02 Apr 2020 13:05:02 +0200
+
+php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
+
+  [ Vítězslav Dvořák ]
   * ease-core based
 
- -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Thu, 06 Jun 2019 15:47:44 +0200
+  [ CyberVitexus ]
+  * Debian buster build
+
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 02 Apr 2020 10:19:07 +0200
 
 php-flexibee-config (0.7-6) UNRELEASED; urgency=medium
 

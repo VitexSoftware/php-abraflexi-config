@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: php-flexibee-config\n"
 "Report-Msgid-Bugs-To: php-flexibee-config@packages.debian.org\n"
-"POT-Creation-Date: 2017-11-23 17:38+0100\n"
+"POT-Creation-Date: 2020-04-02 11:01+0200\n"
 "PO-Revision-Date: 2017-11-23 17:33+0100\n"
 "Last-Translator: Vítězslav Dvořák <info@vitexsoftware.cz>\n"
 "Language-Team: VitexSoftware <info@vitexsofware.cz>\n"
@@ -19,71 +19,60 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Type: string
-#. Default
-#: ../templates:1001
-msgid "https://demo.flexibee.eu"
-msgstr "https://demo.flexibee.eu"
-
-#. Type: string
 #. Description
-#: ../templates:1002
+#: ../templates:1001
 msgid "FlexiBee API URL:"
 msgstr "FlexiBee API URL:"
 
 #. Type: string
 #. Description
-#: ../templates:1002
+#: ../templates:1001
 msgid ""
 "URL with protocol, hostname and optional port ( https://localhost:5434 )"
 msgstr ""
 "URL with protocol, hostname and optional port ( https://localhost:5434 )"
 
 #. Type: string
-#. Default
-#. Type: string
-#. Default
-#: ../templates:2001 ../templates:3001
-msgid "winstrom"
-msgstr "winstrom"
-
-#. Type: string
 #. Description
-#: ../templates:2002
+#: ../templates:2001
 msgid "FlexiBee API Username:"
 msgstr "FlexiBee API Username:"
 
 #. Type: string
 #. Description
-#: ../templates:2002
+#: ../templates:2001
 msgid "User with prermisson to use REST API"
 msgstr "User with prermisson to use REST API"
 
 #. Type: string
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid "FlexiBee API password:"
 msgstr "FlexiBee API password:"
 
 #. Type: string
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid "Password for user with prermisson to use REST API"
 msgstr "Password for user with prermisson to use REST API"
 
 #. Type: string
-#. Default
-#: ../templates:4001
-msgid "demo"
-msgstr "demo"
-
-#. Type: string
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid "Selected company:"
 msgstr "Selected company:"
 
 #. Type: string
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid "First company opened by default"
 msgstr "First company opened by default"
+
+#~ msgid "https://demo.flexibee.eu"
+#~ msgstr "https://demo.flexibee.eu"
+
+#~ msgid "winstrom"
+#~ msgstr "winstrom"
+
+#~ msgid "demo"
+#~ msgstr "demo"

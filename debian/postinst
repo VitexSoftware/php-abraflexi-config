@@ -1,16 +1,16 @@
 #!/bin/sh
 # postinst script for php-flexibee-config
 
-set -e
+export DH_VERBOSE=1
 
-cd /usr/share/php-flexibee-config
-if [ -f composer.lock ] ; then
-    rm -f composer.lock
-fi
-composer --no-plugins --no-scripts --no-dev -o install
+CONFIGFILE=/etc/flexibee/client.json
+set -e
+. /usr/share/debconf/confmodule
+
+composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-flexibee-config
 
 if [ "$1" = "configure" ]; then
-    . /usr/share/debconf/confmodule
+
     db_get php-flexibee-config/FLEXIBEE_URL
     flexibee-client-config FLEXIBEE_URL $RET
     db_get php-flexibee-config/FLEXIBEE_LOGIN
@@ -21,11 +21,7 @@ if [ "$1" = "configure" ]; then
     flexibee-client-config FLEXIBEE_COMPANY $RET
 fi
 
-
-if [ -f /usr/bin/flexibee-client-checker ]; then
-    flexibee-client-checker
-fi
-
+flexibee-client-config-checker
 
 #DEBHELPER#
 

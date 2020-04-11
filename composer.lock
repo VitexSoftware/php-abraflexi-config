@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92a88acf83eb0e3b09d7785ed7483c8a",
+    "content-hash": "3eda8842d57cc1f741bd40e9ac7e0895",
     "packages": [
         {
             "name": "pear/console_getopt",
-            "version": "v1.4.2",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Console_Getopt.git",
-                "reference": "6c77aeb625b32bd752e89ee17972d103588b90c0"
+                "reference": "a41f8d3e668987609178c7c4a9fe48fecac53fa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/6c77aeb625b32bd752e89ee17972d103588b90c0",
-                "reference": "6c77aeb625b32bd752e89ee17972d103588b90c0",
+                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/a41f8d3e668987609178c7c4a9fe48fecac53fa0",
+                "reference": "a41f8d3e668987609178c7c4a9fe48fecac53fa0",
                 "shasum": ""
             },
             "type": "library",
@@ -35,11 +35,6 @@
             ],
             "authors": [
                 {
-                    "name": "Greg Beaver",
-                    "email": "cellog@php.net",
-                    "role": "Helper"
-                },
-                {
                     "name": "Andrei Zmievski",
                     "email": "andrei@php.net",
                     "role": "Lead"
@@ -48,10 +43,15 @@
                     "name": "Stig Bakken",
                     "email": "stig@php.net",
                     "role": "Developer"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net",
+                    "role": "Helper"
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
-            "time": "2019-02-06T16:52:33+00:00"
+            "time": "2019-11-20T18:27:48+00:00"
         },
         {
             "name": "pear/mail",
@@ -113,16 +113,16 @@
         },
         {
             "name": "pear/mail_mime",
-            "version": "1.10.2",
+            "version": "1.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Mail_Mime.git",
-                "reference": "7b2f93fa5219da99e9997f497b916b5bb27eb57a"
+                "reference": "4b4c1f9c2850e9fd646ea6a25f11d4735b36edbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Mail_Mime/zipball/7b2f93fa5219da99e9997f497b916b5bb27eb57a",
-                "reference": "7b2f93fa5219da99e9997f497b916b5bb27eb57a",
+                "url": "https://api.github.com/repos/pear/Mail_Mime/zipball/4b4c1f9c2850e9fd646ea6a25f11d4735b36edbd",
+                "reference": "4b4c1f9c2850e9fd646ea6a25f11d4735b36edbd",
                 "shasum": ""
             },
             "require": {
@@ -155,20 +155,20 @@
             ],
             "description": "Mail_Mime provides classes to create MIME messages",
             "homepage": "http://pear.php.net/package/Mail_Mime",
-            "time": "2017-11-17T09:21:45+00:00"
+            "time": "2020-03-01T07:54:36+00:00"
         },
         {
             "name": "pear/pear-core-minimal",
-            "version": "v1.10.7",
+            "version": "v1.10.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/pear-core-minimal.git",
-                "reference": "19a3e0fcd50492c4357372f623f55f1b144346da"
+                "reference": "625a3c429d9b2c1546438679074cac1b089116a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/19a3e0fcd50492c4357372f623f55f1b144346da",
-                "reference": "19a3e0fcd50492c4357372f623f55f1b144346da",
+                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/625a3c429d9b2c1546438679074cac1b089116a7",
+                "reference": "625a3c429d9b2c1546438679074cac1b089116a7",
                 "shasum": ""
             },
             "require": {
@@ -199,20 +199,20 @@
                 }
             ],
             "description": "Minimal set of PEAR core files to be used as composer dependency",
-            "time": "2018-12-05T20:03:52+00:00"
+            "time": "2019-11-19T19:00:24+00:00"
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "8c18719fdae000b690e3912be401c76e406dd13b"
+                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/8c18719fdae000b690e3912be401c76e406dd13b",
-                "reference": "8c18719fdae000b690e3912be401c76e406dd13b",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
+                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
                 "shasum": ""
             },
             "require": {
@@ -228,9 +228,9 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "PEAR": ""
-                }
+                "classmap": [
+                    "PEAR/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "include-path": [
@@ -254,29 +254,29 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2015-02-10T20:07:52+00:00"
+            "time": "2019-12-10T10:24:42+00:00"
         },
         {
-            "name": "spoje.net/flexipeehp",
+            "name": "spoje.net/flexibee",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Spoje-NET/FlexiPeeHP.git",
-                "reference": "d1663631aea6bae7aac75757667c458dfba312d8"
+                "url": "https://github.com/Spoje-NET/php-flexibee.git",
+                "reference": "ef6b0752ff64b44435899a8756e2a54fb2e4cd09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Spoje-NET/FlexiPeeHP/zipball/d1663631aea6bae7aac75757667c458dfba312d8",
-                "reference": "d1663631aea6bae7aac75757667c458dfba312d8",
+                "url": "https://api.github.com/repos/Spoje-NET/php-flexibee/zipball/ef6b0752ff64b44435899a8756e2a54fb2e4cd09",
+                "reference": "ef6b0752ff64b44435899a8756e2a54fb2e4cd09",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
-                "php": ">=5.6",
-                "vitexsoftware/ease-framework": "dev-master"
+                "vitexsoftware/ease-core": "dev-master"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=7"
+                "phing/phing": "*",
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
@@ -294,51 +294,43 @@
                     "email": "vitex@arachne.cz"
                 }
             ],
-            "description": "PHP Based Library for easy interaction with czech accounting system Flexibee.",
-            "time": "2019-02-21T19:12:33+00:00"
+            "description": "PHP Based Library for easy interaction with czech accounting system FlexiBee.",
+            "time": "2020-04-07T12:37:39+00:00"
         },
         {
-            "name": "vitexsoftware/ease-framework",
+            "name": "vitexsoftware/ease-core",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/VitexSoftware/EaseFramework.git",
-                "reference": "c6046a85b66f4da47e10863b2fd9c0cff72d8c51"
+                "url": "https://github.com/VitexSoftware/php-ease-core.git",
+                "reference": "766a8bdad8053b71099c776751ecc9c4087c84a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VitexSoftware/EaseFramework/zipball/c6046a85b66f4da47e10863b2fd9c0cff72d8c51",
-                "reference": "c6046a85b66f4da47e10863b2fd9c0cff72d8c51",
+                "url": "https://api.github.com/repos/VitexSoftware/php-ease-core/zipball/766a8bdad8053b71099c776751ecc9c4087c84a0",
+                "reference": "766a8bdad8053b71099c776751ecc9c4087c84a0",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
                 "pear/mail": "~1.3",
                 "pear/mail_mime": "~1.10",
-                "php": ">=5.6"
+                "php": ">=7"
+            },
+            "conflict": {
+                "vitexsoftware/ease-framework": "*"
             },
             "require-dev": {
-                "apigen/apigen": ">=4",
                 "jakub-onderka/php-console-highlighter": "*",
-                "jakub-onderka/php-parallel-lint": "^1",
-                "mockery/mockery": "^1.1",
-                "php-coveralls/php-coveralls": "^2",
-                "phpunit/php-token-stream": ">=1.4",
-                "phpunit/phpunit": "^6",
-                "phpunit/phpunit-skeleton-generator": "*",
-                "robmorgan/phinx": "^0.9",
-                "squizlabs/php_codesniffer": "^3.2"
+                "jakub-onderka/php-parallel-lint": "*",
+                "php-coveralls/php-coveralls": "*",
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Ease\\": "src/Ease/",
-                    "Ease\\Logger\\": "src/Ease/Logger",
-                    "Ease\\Html\\": "src/Ease/Html",
-                    "Ease\\JQuery\\": "src/Ease/JQuery",
-                    "Ease\\SQL\\": "src/Ease/SQL",
-                    "Ease\\TWB\\": "src/Ease/TWB",
-                    "Ease\\TWB4\\": "src/Ease/TWB4"
+                    "Ease\\Logger\\": "src/Ease/Logger/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -352,20 +344,20 @@
                     "homepage": "http://v.s.cz/"
                 }
             ],
-            "description": "An PHP Framework for Ease of writing Applications",
+            "description": "An PHP Framework for writing Applications",
             "homepage": "http://v.s.cz/ease.php",
-            "time": "2019-03-03T22:48:42+00:00"
+            "time": "2020-03-07T21:20:49+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "vitexsoftware/ease-framework": 20,
-        "spoje.net/flexipeehp": 20
+        "spoje.net/flexibee": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

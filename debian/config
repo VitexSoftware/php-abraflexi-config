@@ -1,16 +1,31 @@
+#!/bin/sh
+CONFIGFILE=/etc/flexibee/client.json
+export DH_VERBOSE=1
+
+set -e
 # Source debconf library.
 . /usr/share/debconf/confmodule
 
 db_version 2.0
 
+# Load config file, if it exists.
+if [ -f $CONFIGFILE ]; then
+    echo $CONFIGFILE exist. Loaing values from it
+    # Store values from config file into
+    # debconf db.
+
+    composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-flexibee-config
+
+    db_set php-flexibee-config/FLEXIBEE_URL "`flexibee-client-config FLEXIBEE_URL`"
+    db_set php-flexibee-config/FLEXIBEE_LOGIN "`flexibee-client-config FLEXIBEE_LOGIN`"
+    db_set php-flexibee-config/FLEXIBEE_PASSWORD "`flexibee-client-config FLEXIBEE_PASSWORD`"
+    db_set php-flexibee-config/FLEXIBEE_COMPANY "`flexibee-client-config FLEXIBEE_COMPANY`"
+fi
+
+# Ask questions.
 db_input critical php-flexibee-config/FLEXIBEE_URL || true
-db_go
-
 db_input critical php-flexibee-config/FLEXIBEE_LOGIN || true
-db_go
-
 db_input critical php-flexibee-config/FLEXIBEE_PASSWORD || true
-db_go
-
 db_input critical php-flexibee-config/FLEXIBEE_COMPANY || true
-db_go
+db_go || true
+
