@@ -1,9 +1,10 @@
-php-flexibee-config (0.22) UNRELEASED; urgency=medium
+php-flexibee-config (0.23) UNRELEASED; urgency=medium
 
   * Try to use existing config file as defaults 
   * Works now
+  * php-flexibee-config can be configured using environment
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 02 Apr 2020 13:05:02 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sun, 12 Apr 2020 01:07:48 +0200
 
 php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
 

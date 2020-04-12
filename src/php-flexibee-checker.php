@@ -8,6 +8,7 @@ $shared = new \Ease\Shared();
 try {
     $shared->loadConfig('../client.json', true);
 } catch (Exception $exc) {
+    $shared->addStatusMessage(_('Try to use ENV to configure'));
 }
 
 $checker = new FlexiPeeHP\Company();
