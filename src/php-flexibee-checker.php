@@ -11,9 +11,9 @@ try {
     $shared->addStatusMessage(_('Try to use ENV to configure'));
 }
 
-$checker = new FlexiPeeHP\Company();
-$infoRaw = $checker->getFlexiData();
-$info = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
+$checker   = new FlexiPeeHP\Company();
+$infoRaw   = $checker->getFlexiData();
+$info      = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
 $myCompany = $checker->getCompany();
 $checker->logBanner();
 
