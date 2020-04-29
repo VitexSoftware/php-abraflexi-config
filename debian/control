@@ -7,7 +7,7 @@ Priority: optional
 Homepage: https://github.com/VitexSoftware/php-flexibee-config
 
 Package: php-flexibee-config
-Depends: ${misc:Depends},php-flexibee, composer, php-cli
+Depends: ${misc:Depends},php-flexibee, composer, php-cli, jq
 Suggests: flexibee-server
 Architecture: all
 Section: web

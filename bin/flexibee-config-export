@@ -1,0 +1,22 @@
+#!/bin/bash
+
+args=("$@")
+if [ $# == 0 ] ;
+then
+    CONFFILE=/etc/flexibee/client.json
+else
+    CONFFILE=${args[0]}
+fi
+
+
+if [ -f "$CONFFILE" ]; then
+    for KEY in $(jq -r 'keys[]' ${CONFFILE})
+    do
+        echo export ${KEY}=`jq -r '.'$KEY ${CONFFILE}`
+    done
+
+else 
+    echo "$CONFFILE does not exist. Please specify another one"
+fi
+
+

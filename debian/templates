@@ -1,3 +1,9 @@
+Template: php-flexibee-config/STATIC_FLEXIBEE_CONFIG
+Type: boolean
+Default: false
+_Description: create static configuration ?
+ Say yes if you do not have preconfigured environment
+
 Template: php-flexibee-config/FLEXIBEE_URL
 Type: string
 Default: https://demo.flexibee.eu

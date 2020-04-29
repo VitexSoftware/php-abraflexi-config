@@ -21,6 +21,9 @@ if [ "$1" = "configure" ]; then
     flexibee-client-config FLEXIBEE_COMPANY $RET
 fi
 
+
+flexibee-config-export > /etc/profile.d/flexibee-client.sh
+
 flexibee-client-config-checker
 
 #DEBHELPER#

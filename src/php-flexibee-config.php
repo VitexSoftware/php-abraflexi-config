@@ -5,8 +5,8 @@ define('EASE_APPNAME', 'php-flexibee-config');
 $configFile = '../client.json';
 $exitcode   = 0;
 
+$shared = new \Ease\Shared();
 if (file_exists($configFile)) {
-    $shared = new \Ease\Shared();
     $shared->loadConfig($configFile, true);
 }
 
@@ -28,6 +28,12 @@ switch ($argc) {
         if ($result === false) {
             $exitcode = 1;
         }
+        break;
+        default :
+        echo 'Usage: ';
+        echo "       ".basename(__FILE__)."                                  -  print current config";
+        echo "       ".basename(__FILE__)." FLEXIBEE_URL                     -  print given key's value";
+        echo "       ".basename(__FILE__)." FLEXIBEE_URL http://server:port  -  set given key's to value";
         break;
 }
 

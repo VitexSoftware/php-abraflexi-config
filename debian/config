@@ -23,9 +23,16 @@ if [ -f $CONFIGFILE ]; then
 fi
 
 # Ask questions.
-db_input critical php-flexibee-config/FLEXIBEE_URL || true
-db_input critical php-flexibee-config/FLEXIBEE_LOGIN || true
-db_input critical php-flexibee-config/FLEXIBEE_PASSWORD || true
-db_input critical php-flexibee-config/FLEXIBEE_COMPANY || true
-db_go || true
+db_input critical php-flexibee-config/STATIC_FLEXIBEE_CONFIG || true
 
+# Check their answer.
+db_get php-flexibee-config/STATIC_FLEXIBEE_CONFIG
+if [ "$RET" = "true" ]; then
+    db_input critical php-flexibee-config/FLEXIBEE_URL || true
+    db_input critical php-flexibee-config/FLEXIBEE_LOGIN || true
+    db_input critical php-flexibee-config/FLEXIBEE_PASSWORD || true
+    db_input critical php-flexibee-config/FLEXIBEE_COMPANY || true
+    db_go
+fi
+
+db_go || true
