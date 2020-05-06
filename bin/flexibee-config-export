@@ -12,7 +12,7 @@ fi
 if [ -f "$CONFFILE" ]; then
     for KEY in $(jq -r 'keys[]' ${CONFFILE})
     do
-        echo export ${KEY}=`jq -r '.'$KEY ${CONFFILE}`
+        echo export ${KEY}="`jq -r '.'$KEY ${CONFFILE}`"
     done
 
 else 

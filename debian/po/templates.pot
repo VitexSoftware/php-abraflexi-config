@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: php-flexibee-config\n"
 "Report-Msgid-Bugs-To: php-flexibee-config@packages.debian.org\n"
-"POT-Creation-Date: 2020-04-02 11:01+0200\n"
+"POT-Creation-Date: 2020-04-29 12:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,51 +17,63 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Type: string
+#. Type: boolean
 #. Description
 #: ../templates:1001
+msgid "create static configuration ?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates:1001
+msgid "Say yes if you do not have preconfigured environment"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates:2001
 msgid "FlexiBee API URL:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:1001
+#: ../templates:2001
 msgid ""
 "URL with protocol, hostname and optional port ( https://localhost:5434 )"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:2001
+#: ../templates:3001
 msgid "FlexiBee API Username:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:2001
+#: ../templates:3001
 msgid "User with prermisson to use REST API"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:3001
+#: ../templates:4001
 msgid "FlexiBee API password:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:3001
+#: ../templates:4001
 msgid "Password for user with prermisson to use REST API"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid "Selected company:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid "First company opened by default"
 msgstr ""
