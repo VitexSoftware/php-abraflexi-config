@@ -9,8 +9,9 @@ php-flexibee-config (0.29) UNRELEASED; urgency=medium
   * twbootstrap renamed to bootstrap
   * Release v0.29
   * Release v0.29
+  * Release v0.29
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 14:20:40 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 14:40:03 +0200
 
 php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
 
