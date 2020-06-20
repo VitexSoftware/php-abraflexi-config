@@ -7,8 +7,9 @@ php-flexibee-config (0.29) UNRELEASED; urgency=medium
   * Release 0.26
   * Generate profile file with quotation marks
   * twbootstrap renamed to bootstrap
+  * Release v0.29
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 13:18:04 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 13:22:15 +0200
 
 php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
 
