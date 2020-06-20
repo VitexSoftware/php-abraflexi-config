@@ -1,4 +1,4 @@
-php-flexibee-config (0.28) UNRELEASED; urgency=medium
+php-flexibee-config (0.29) UNRELEASED; urgency=medium
 
   * Try to use existing config file as defaults 
   * Works now
@@ -6,8 +6,9 @@ php-flexibee-config (0.28) UNRELEASED; urgency=medium
   * config file based configuration is optional
   * Release 0.26
   * Generate profile file with quotation marks
+  * twbootstrap renamed to bootstrap
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sun, 17 May 2020 09:53:20 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 13:18:04 +0200
 
 php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
 

@@ -27,4 +27,12 @@ deb:
 dimage:
 	docker build -t vitexsoftware/flexibee-client-config .
 
+release:
+	echo Release v$(nextversion)
+	dch -v $(nextversion) `git log -1 --pretty=%B | head -n 1`
+	debuild -i -us -uc -b
+	git commit -a -m "Release v$(nextversion)"
+	git tag -a $(nextversion) -m "version $(nextversion)"
+
+
 .PHONY : install
