@@ -1,17 +1,18 @@
-Source: php-flexibee-config
+Source: php-abraflexi-config
 Build-Depends: debhelper (>= 7.0.50~),po-debconf
 Standards-Version: 3.9.8
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Section: office
 Uploaders: Vitex <vitex@hippy.cz>
 Priority: optional
-Homepage: https://github.com/VitexSoftware/php-flexibee-config
+Homepage: https://github.com/VitexSoftware/php-abraflexi-config
 
-Package: php-flexibee-config
-Depends: ${misc:Depends},php-flexibee, composer, php-cli, jq
-Suggests: flexibee-server
+Package: php-abraflexi-config
+Depends: ${misc:Depends},php-abraflexi, composer, php-cli, jq
+Suggests: abraflexi-server
 Architecture: all
 Section: web
 Priority: optional
-Description: config and configurator for php-flexibee
- Setup and probe shared configuration for FlexiPeeHP based
+Description: config and configurator for php-abraflexi
+ Setup and probe shared configuration for AbraFlexi based
  tools

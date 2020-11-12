@@ -1,30 +1,30 @@
 #!/bin/sh
-# postinst script for php-flexibee-config
+# postinst script for php-abraflexi-config
 
-export DH_VERBOSE=1
+#export DH_VERBOSE=1
 
-CONFIGFILE=/etc/flexibee/client.json
+CONFIGFILE=/etc/abraflexi/client.json
 set -e
 . /usr/share/debconf/confmodule
 
-composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-flexibee-config
+composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-abraflexi-config
 
 if [ "$1" = "configure" ]; then
 
-    db_get php-flexibee-config/FLEXIBEE_URL
-    flexibee-client-config FLEXIBEE_URL $RET
-    db_get php-flexibee-config/FLEXIBEE_LOGIN
-    flexibee-client-config FLEXIBEE_LOGIN $RET
-    db_get php-flexibee-config/FLEXIBEE_PASSWORD
-    flexibee-client-config FLEXIBEE_PASSWORD $RET
-    db_get php-flexibee-config/FLEXIBEE_COMPANY
-    flexibee-client-config FLEXIBEE_COMPANY $RET
+    db_get php-abraflexi-config/ABRAFLEXI_URL
+    abraflexi-client-config ABRAFLEXI_URL $RET
+    db_get php-abraflexi-config/ABRAFLEXI_LOGIN
+    abraflexi-client-config ABRAFLEXI_LOGIN $RET
+    db_get php-abraflexi-config/ABRAFLEXI_PASSWORD
+    abraflexi-client-config ABRAFLEXI_PASSWORD $RET
+    db_get php-abraflexi-config/ABRAFLEXI_COMPANY
+    abraflexi-client-config ABRAFLEXI_COMPANY $RET
 fi
 
 
-flexibee-config-export > /etc/profile.d/flexibee-client.sh
+abraflexi-config-export > /etc/profile.d/abraflexi-client.sh
 
-flexibee-client-config-checker
+abraflexi-client-config-checker
 
 #DEBHELPER#
 

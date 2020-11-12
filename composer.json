@@ -1,14 +1,14 @@
 {
-    "name": "vendor/php-flexibee-config",
-    "description": "Configurator and configuration shared with several flexibee-tools",
+    "name": "vitexsoftware/php-abraflexi-config",
+    "description": "Configurator and configuration shared with several abraflexi-tools",
     "authors": [
         {
             "name": "Vítězslav Dvořák",
             "email": "info@vitexsoftware.cz"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "spoje.net/flexibee": "dev-master"
+        "spojenet/flexibee": "2.0.x-dev"
     }
 }

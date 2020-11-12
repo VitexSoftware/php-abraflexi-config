@@ -1,28 +1,28 @@
-Template: php-flexibee-config/STATIC_FLEXIBEE_CONFIG
+Template: php-abraflexi-config/STATIC_ABRAFLEXI_CONFIG
 Type: boolean
 Default: false
 _Description: create static configuration ?
  Say yes if you do not have preconfigured environment
 
-Template: php-flexibee-config/FLEXIBEE_URL
+Template: php-abraflexi-config/ABRAFLEXI_URL
 Type: string
 Default: https://demo.flexibee.eu
-_Description: FlexiBee API URL:
+_Description: AbraFlexi API URL:
  URL with protocol, hostname and optional port ( https://localhost:5434 )
 
-Template: php-flexibee-config/FLEXIBEE_LOGIN
+Template: php-abraflexi-config/ABRAFLEXI_LOGIN
 Type: string
 Default: winstrom
-_Description: FlexiBee API Username:
+_Description: AbraFlexi API Username:
  User with prermisson to use REST API
 
-Template: php-flexibee-config/FLEXIBEE_PASSWORD
+Template: php-abraflexi-config/ABRAFLEXI_PASSWORD
 Type: string
 Default: winstrom
-_Description: FlexiBee API password:
+_Description: AbraFlexi API password:
  Password for user with prermisson to use REST API
 
-Template: php-flexibee-config/FLEXIBEE_COMPANY
+Template: php-abraflexi-config/ABRAFLEXI_COMPANY
 Type: string
 Default: demo
 _Description: Selected company:

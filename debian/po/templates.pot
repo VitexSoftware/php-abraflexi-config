@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the php-flexibee-config package.
+# This file is distributed under the same license as the php-abraflexi-config package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: php-flexibee-config\n"
-"Report-Msgid-Bugs-To: php-flexibee-config@packages.debian.org\n"
+"Project-Id-Version: php-abraflexi-config\n"
+"Report-Msgid-Bugs-To: php-abraflexi-config@packages.debian.org\n"
 "POT-Creation-Date: 2020-04-29 12:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -32,7 +32,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:2001
-msgid "FlexiBee API URL:"
+msgid "AbraFlexi API URL:"
 msgstr ""
 
 #. Type: string
@@ -45,7 +45,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:3001
-msgid "FlexiBee API Username:"
+msgid "AbraFlexi API Username:"
 msgstr ""
 
 #. Type: string
@@ -57,7 +57,7 @@ msgstr ""
 #. Type: string
 #. Description
 #: ../templates:4001
-msgid "FlexiBee API password:"
+msgid "AbraFlexi API password:"
 msgstr ""
 
 #. Type: string

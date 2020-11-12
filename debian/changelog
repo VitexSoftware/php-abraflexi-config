@@ -1,19 +1,20 @@
-php-flexibee-config (0.29) UNRELEASED; urgency=medium
+php-abraflexi-config (1.0) UNRELEASED; urgency=medium
 
   * Try to use existing config file as defaults 
   * Works now
-  * php-flexibee-config can be configured using environment
+  * php-abraflexi-config can be configured using environment
   * config file based configuration is optional
   * Release 0.26
   * Generate profile file with quotation marks
   * twbootstrap renamed to bootstrap
   * Release v0.29
-  * Release v0.29
-  * Release v0.29
+  * All renamed to AbraFlexi
+  * Release v1.0
+  * 
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Sat, 20 Jun 2020 14:40:03 +0200
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 12 Nov 2020 03:09:37 +0100
 
-php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
+php-abraflexi-config (0.10) EXPERIMENTAL; urgency=medium
 
   [ Vítězslav Dvořák ]
   * ease-core based
@@ -23,19 +24,19 @@ php-flexibee-config (0.10) EXPERIMENTAL; urgency=medium
 
  -- CyberVitexus <vitex@exiv.jinonice.czf>  Thu, 02 Apr 2020 10:19:07 +0200
 
-php-flexibee-config (0.7-6) UNRELEASED; urgency=medium
+php-abraflexi-config (0.7-6) UNRELEASED; urgency=medium
 
   * Dependency update for Ubuntu 18.04
 
  -- Vítězslav Dvořák <vitex@develoid.jinonice.czf>  Wed, 31 Oct 2018 17:10:45 +0100
 
-php-flexibee-config (0.7-1) experimental; urgency=medium
+php-abraflexi-config (0.7-1) experimental; urgency=medium
 
   * binaries renamed
 
  -- Vitex Software (http://v.s.cz/) <info@vitexsoftware.cz>  Mon, 02 Jul 2018 23:45:10 +0200
 
-php-flexibee-config (0.6) experimental; urgency=medium
+php-abraflexi-config (0.6) experimental; urgency=medium
 
   * Initial release
   * Dependencies Fix

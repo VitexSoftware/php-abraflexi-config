@@ -1,4 +1,4 @@
-debian/conf/composer.json       usr/share/php-flexibee-config/
-debian/conf/client.json         etc/flexibee/
-src/*			        usr/lib/php-flexibee-config/
+debian/conf/composer.json       usr/share/php-abraflexi-config/
+debian/conf/client.json         etc/abraflexi/
+src/*			        usr/lib/php-abraflexi-config/
 bin/*                           usr/bin/

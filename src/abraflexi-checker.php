@@ -1,18 +1,18 @@
 <?php
 
 require_once '../vendor/autoload.php';
-define('EASE_APPNAME', 'php-flexibee-checker');
+define('EASE_APPNAME', 'php-abraflexi-checker');
 define('EASE_LOGGER', 'console|syslog');
 
 $shared = new \Ease\Shared();
 
-if(getenv('FLEXIBEE_URL')===false){
+if (getenv('ABRAFLEXI_URL') === false) {
     $shared->loadConfig('../client.json', true);
 }
- 
-$checker   = new FlexiPeeHP\Company();
-$infoRaw   = $checker->getFlexiData();
-$info      = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
+
+$checker = new FlexiPeeHP\Company();
+$infoRaw = $checker->getFlexiData();
+$info = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
 $myCompany = $checker->getCompany();
 $checker->logBanner();
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-CONFIGFILE=/etc/flexibee/client.json
+CONFIGFILE=/etc/abraflexi/client.json
 export DH_VERBOSE=1
 
 set -e
@@ -14,24 +14,24 @@ if [ -f $CONFIGFILE ]; then
     # Store values from config file into
     # debconf db.
 
-    composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-flexibee-config
+    composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-abraflexi-config
 
-    db_set php-flexibee-config/FLEXIBEE_URL "`flexibee-client-config FLEXIBEE_URL`"
-    db_set php-flexibee-config/FLEXIBEE_LOGIN "`flexibee-client-config FLEXIBEE_LOGIN`"
-    db_set php-flexibee-config/FLEXIBEE_PASSWORD "`flexibee-client-config FLEXIBEE_PASSWORD`"
-    db_set php-flexibee-config/FLEXIBEE_COMPANY "`flexibee-client-config FLEXIBEE_COMPANY`"
+    db_set php-abraflexi-config/ABRAFLEXI_URL "`abraflexi-client-config ABRAFLEXI_URL`"
+    db_set php-abraflexi-config/ABRAFLEXI_LOGIN "`abraflexi-client-config ABRAFLEXI_LOGIN`"
+    db_set php-abraflexi-config/ABRAFLEXI_PASSWORD "`abraflexi-client-config ABRAFLEXI_PASSWORD`"
+    db_set php-abraflexi-config/ABRAFLEXI_COMPANY "`abraflexi-client-config ABRAFLEXI_COMPANY`"
 fi
 
 # Ask questions.
-db_input critical php-flexibee-config/STATIC_FLEXIBEE_CONFIG || true
+db_input critical php-abraflexi-config/STATIC_ABRAFLEXI_CONFIG || true
 
 # Check their answer.
-db_get php-flexibee-config/STATIC_FLEXIBEE_CONFIG
+db_get php-abraflexi-config/STATIC_ABRAFLEXI_CONFIG
 if [ "$RET" = "true" ]; then
-    db_input critical php-flexibee-config/FLEXIBEE_URL || true
-    db_input critical php-flexibee-config/FLEXIBEE_LOGIN || true
-    db_input critical php-flexibee-config/FLEXIBEE_PASSWORD || true
-    db_input critical php-flexibee-config/FLEXIBEE_COMPANY || true
+    db_input critical php-abraflexi-config/ABRAFLEXI_URL || true
+    db_input critical php-abraflexi-config/ABRAFLEXI_LOGIN || true
+    db_input critical php-abraflexi-config/ABRAFLEXI_PASSWORD || true
+    db_input critical php-abraflexi-config/ABRAFLEXI_COMPANY || true
     db_go
 fi
 
