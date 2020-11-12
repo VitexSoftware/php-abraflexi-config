@@ -14,4 +14,4 @@
 /debian/php-flexibee-config.postrm.debhelper
 /debian/debhelper-build-stamp
 /deb/
-/debian/.debhelper/
+/debian/.debhelper/nbproject
