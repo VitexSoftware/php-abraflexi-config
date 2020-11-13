@@ -8,7 +8,7 @@ Priority: optional
 Homepage: https://github.com/VitexSoftware/php-abraflexi-config
 
 Package: php-abraflexi-config
-Depends: ${misc:Depends},php-abraflexi, composer, php-cli, jq
+Depends: ${misc:Depends},php-spojenet-abraflexi, composer, php-cli, jq
 Suggests: abraflexi-server
 Architecture: all
 Section: web

@@ -15,3 +15,8 @@
 /debian/debhelper-build-stamp
 /deb/
 /debian/.debhelper/nbproject
+/debian/.debhelper/
+/debian/php-abraflexi-config.substvars
+/debian/php-abraflexi-config.debhelper.log
+/debian/php-abraflexi-config.postrm.debhelper
+/debian/php-abraflexi-config/
