@@ -1,5 +1,5 @@
 <?php
-
+namespace AbraFlexi;
 require_once '../vendor/autoload.php';
 define('EASE_APPNAME', 'php-abraflexi-checker');
 define('EASE_LOGGER', 'console|syslog');
@@ -10,7 +10,7 @@ if (getenv('ABRAFLEXI_URL') === false) {
     $shared->loadConfig('../client.json', true);
 }
 
-$checker = new FlexiPeeHP\Company();
+$checker = new Company();
 $infoRaw = $checker->getFlexiData();
 $info = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
 $myCompany = $checker->getCompany();

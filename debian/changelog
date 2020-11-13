@@ -1,4 +1,4 @@
-php-abraflexi-config (1.1) UNRELEASED; urgency=medium
+php-abraflexi-config (1.2) UNRELEASED; urgency=medium
 
   * Try to use existing config file as defaults 
   * Works now
@@ -11,7 +11,7 @@ php-abraflexi-config (1.1) UNRELEASED; urgency=medium
   * All renamed to AbraFlexi
   * Release v1.0
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Fri, 13 Nov 2020 02:34:02 +0100
+ -- CyberVitexus <vitex@exiv.jinonice.czf>  Fri, 13 Nov 2020 03:12:29 +0100
 
 php-abraflexi-config (0.10) EXPERIMENTAL; urgency=medium
 
