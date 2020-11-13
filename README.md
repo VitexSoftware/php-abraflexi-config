@@ -40,8 +40,8 @@ Závislosti
 
 Tento nástroj ke svojí funkci využívá následující knihovny:
 
- * [**EasePHP Framework**](https://github.com/VitexSoftware/EaseFramework) - pomocné funkce např. logování
- * [**FlexiPeeHP**](https://github.com/Spoje-NET/FlexiPeeHP)        - komunikace s [AbraFlexi](https://abraflexi.eu/)
+ * [**PHP Ease Framework**](https://github.com/VitexSoftware/php-ease-core) - pomocné funkce např. logování
+ * [**PHP-AbraFlexi**](https://github.com/Spoje-NET/php-abraflexi/)        - komunikace s [AbraFlexi](https://abraflexi.eu/)
 
 Balíček je využíván těmito aplikacemi:
 
