@@ -1,13 +1,19 @@
 <?php
+
 namespace AbraFlexi;
+
 require_once '../vendor/autoload.php';
 define('EASE_APPNAME', 'php-abraflexi-checker');
 define('EASE_LOGGER', 'console|syslog');
 
 $shared = new \Ease\Shared();
 
-if (getenv('ABRAFLEXI_URL') === false) {
-    $shared->loadConfig('../client.json', true);
+if (\Ease\Functions::cfg('ABRAFLEXI_URL') === false) {
+    $cfgFile = '../client.json';
+    if(file_exists($cfgFile)){
+       $loaded = $shared->loadConfig($cfgFile, true);
+        \Ease\Shared::logger()->addStatusMessage('Loading config file '.$cfgFile, empty($loaded) ? 'warning' : 'success' );
+    }
 }
 
 $checker = new Company();
