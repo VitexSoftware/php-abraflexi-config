@@ -1,4 +1,4 @@
-Source: php-abraflexi-config
+Source: abraflexi-client-config
 Build-Depends: debhelper (>= 7.0.50~),po-debconf
 Standards-Version: 3.9.8
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
@@ -7,7 +7,8 @@ Uploaders: Vitex <vitex@hippy.cz>
 Priority: optional
 Homepage: https://github.com/VitexSoftware/php-abraflexi-config
 
-Package: php-abraflexi-config
+Package: abraflexi-client-config
+Replaces: php-abraflexi-config
 Depends: ${misc:Depends},php-spojenet-abraflexi, composer, php-cli, jq
 Suggests: abraflexi-server
 Architecture: all
