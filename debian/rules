@@ -6,10 +6,10 @@
 override_dh_install:
 	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'`'"' debian/conf/composer.json |sponge debian/conf/composer.json
 	dh_install
-	sed -i -e 's/..\/vendor/\/var\/lib\/php-abraflexi-config/g' 	     debian/php-abraflexi-config/usr/lib/php-abraflexi-config/abraflexi-checker.php
-	sed -i -e 's/..\/vendor/\/var\/lib\/php-abraflexi-config/g' 	     debian/php-abraflexi-config/usr/lib/php-abraflexi-config/abraflexi-config.php
-	sed -i -e 's/\.\./\/etc\/abraflexi/g' 	     debian/php-abraflexi-config/usr/lib/php-abraflexi-config/abraflexi-checker.php
-	sed -i -e 's/\.\./\/etc\/abraflexi/g' 	     debian/php-abraflexi-config/usr/lib/php-abraflexi-config/abraflexi-config.php
+	sed -i -e 's/..\/vendor/\/var\/lib\/abraflexi-client-config/g' 	     debian/abraflexi-client-config/usr/lib/abraflexi-client-config/abraflexi-checker.php
+	sed -i -e 's/..\/vendor/\/var\/lib\/abraflexi-client-config/g' 	     debian/abraflexi-client-config/usr/lib/abraflexi-client-config/abraflexi-config.php
+	sed -i -e 's/\.\./\/etc\/abraflexi/g' 	     debian/abraflexi-client-config/usr/lib/abraflexi-client-config/abraflexi-checker.php
+	sed -i -e 's/\.\./\/etc\/abraflexi/g' 	     debian/abraflexi-client-config/usr/lib/abraflexi-client-config/abraflexi-config.php
 
 override_dh_clean:
 	debconf-updatepo

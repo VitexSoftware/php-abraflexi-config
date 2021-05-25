@@ -14,24 +14,24 @@ if [ -f $CONFIGFILE ]; then
     # Store values from config file into
     # debconf db.
 
-    composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-abraflexi-config
+    composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/abraflexi-client-config
 
-    db_set php-abraflexi-config/ABRAFLEXI_URL "`abraflexi-client-config ABRAFLEXI_URL`"
-    db_set php-abraflexi-config/ABRAFLEXI_LOGIN "`abraflexi-client-config ABRAFLEXI_LOGIN`"
-    db_set php-abraflexi-config/ABRAFLEXI_PASSWORD "`abraflexi-client-config ABRAFLEXI_PASSWORD`"
-    db_set php-abraflexi-config/ABRAFLEXI_COMPANY "`abraflexi-client-config ABRAFLEXI_COMPANY`"
+    db_set abraflexi-client-config/ABRAFLEXI_URL "`abraflexi-client-config ABRAFLEXI_URL`"
+    db_set abraflexi-client-config/ABRAFLEXI_LOGIN "`abraflexi-client-config ABRAFLEXI_LOGIN`"
+    db_set abraflexi-client-config/ABRAFLEXI_PASSWORD "`abraflexi-client-config ABRAFLEXI_PASSWORD`"
+    db_set abraflexi-client-config/ABRAFLEXI_COMPANY "`abraflexi-client-config ABRAFLEXI_COMPANY`"
 fi
 
 # Ask questions.
-db_input critical php-abraflexi-config/STATIC_ABRAFLEXI_CONFIG || true
+db_input critical abraflexi-client-config/STATIC_ABRAFLEXI_CONFIG || true
 
 # Check their answer.
-db_get php-abraflexi-config/STATIC_ABRAFLEXI_CONFIG
+db_get abraflexi-client-config/STATIC_ABRAFLEXI_CONFIG
 if [ "$RET" = "true" ]; then
-    db_input critical php-abraflexi-config/ABRAFLEXI_URL || true
-    db_input critical php-abraflexi-config/ABRAFLEXI_LOGIN || true
-    db_input critical php-abraflexi-config/ABRAFLEXI_PASSWORD || true
-    db_input critical php-abraflexi-config/ABRAFLEXI_COMPANY || true
+    db_input critical abraflexi-client-config/ABRAFLEXI_URL || true
+    db_input critical abraflexi-client-config/ABRAFLEXI_LOGIN || true
+    db_input critical abraflexi-client-config/ABRAFLEXI_PASSWORD || true
+    db_input critical abraflexi-client-config/ABRAFLEXI_COMPANY || true
     db_go
 fi
 

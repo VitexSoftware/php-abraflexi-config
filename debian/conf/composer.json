@@ -11,7 +11,7 @@
   ],
   "minimum-stability": "dev",
   "config": {
-    "vendor-dir": "/var/lib/php-abraflexi-config"
+    "vendor-dir": "/var/lib/abraflexi-client-config"
   },
   "require": {
     "deb/ease-core": "*",

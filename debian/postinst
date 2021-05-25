@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for php-abraflexi-config
+# postinst script for abraflexi-client-config
 
 #export DH_VERBOSE=1
 
@@ -7,17 +7,17 @@ CONFIGFILE=/etc/abraflexi/client.json
 set -e
 . /usr/share/debconf/confmodule
 
-composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/php-abraflexi-config
+composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/abraflexi-client-config
 
 if [ "$1" = "configure" ]; then
 
-    db_get php-abraflexi-config/ABRAFLEXI_URL
+    db_get abraflexi-client-config/ABRAFLEXI_URL
     abraflexi-client-config ABRAFLEXI_URL $RET
-    db_get php-abraflexi-config/ABRAFLEXI_LOGIN
+    db_get abraflexi-client-config/ABRAFLEXI_LOGIN
     abraflexi-client-config ABRAFLEXI_LOGIN $RET
-    db_get php-abraflexi-config/ABRAFLEXI_PASSWORD
+    db_get abraflexi-client-config/ABRAFLEXI_PASSWORD
     abraflexi-client-config ABRAFLEXI_PASSWORD $RET
-    db_get php-abraflexi-config/ABRAFLEXI_COMPANY
+    db_get abraflexi-client-config/ABRAFLEXI_COMPANY
     abraflexi-client-config ABRAFLEXI_COMPANY $RET
 fi
 

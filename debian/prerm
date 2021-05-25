@@ -1,7 +1,7 @@
 #!/bin/bash
 # rm script for system.spoje.net
 
-rm -f /usr/share/php-abraflexi-config/composer.lock
+rm -f /usr/share/abraflexi-client-config/composer.lock
 
 #DEBHELPER#
 
