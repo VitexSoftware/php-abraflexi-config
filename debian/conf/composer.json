@@ -2,7 +2,7 @@
   "name": "deb/abraflexi-config",
   "description": "Configuration and configurator for FlexiPeeHP based tools",
   "type": "project",
-  "version": "1.3",
+  "version": "1.4",
   "authors": [
     {
       "name": "Vítězslav Dvořák",
