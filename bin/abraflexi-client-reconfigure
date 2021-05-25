@@ -1,2 +1,2 @@
 #!/bin/bash
-dpkg-reconfigure php-abraflexi-config
+dpkg-reconfigure abraflexi-client-config

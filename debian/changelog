@@ -1,4 +1,4 @@
-abraflexi-client-config (1.5) UNRELEASED; urgency=medium
+abraflexi-client-config (1.6) UNRELEASED; urgency=medium
 
   * Try to use existing config file as defaults 
   * Works now
@@ -12,7 +12,6 @@ abraflexi-client-config (1.5) UNRELEASED; urgency=medium
   * Release v1.0
   * used config  source file/env notification
   * renamed to abraflexi-client-config
-
 
  -- CyberVitexus <vitex@exiv.jinonice.czf>  Fri, 13 Nov 2020 03:12:29 +0100
 

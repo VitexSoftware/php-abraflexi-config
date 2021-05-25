@@ -1,6 +1,6 @@
-![Package Logo](https://raw.githubusercontent.com/VitexSoftware/php-abraflexi-config/master/package_logo.png "Project Logo")
+![Package Logo](https://raw.githubusercontent.com/VitexSoftware/abraflexi-client-config/master/package_logo.png "Project Logo")
 
-php-abraflexi-config
+abraflexi-client-config
 ===================
 
 Konfigurátor a sdílená konfigurace pro aplikace využívající php-abraflexi
@@ -20,13 +20,13 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
     wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
     echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
     apt update
-    apt install php-abraflexi-config
+    apt install abraflexi-client-config
 
 Youtube:
 [![Instalace](http://img.youtube.com/vi/pToYZfh3dFE/0.jpg)](http://www.youtube.com/watch?v=pToYZfh3dFE)
 
 Screenshot:
-![Install Upgrade](https://raw.githubusercontent.com/VitexSoftware/php-abraflexi-config/master/doc/install-upgrade.png "Install Upgrade Screenshot")
+![Install Upgrade](doc/install-upgrade.png?raw=true "Install Upgrade Screenshot")
 
 
 Po instalaci balíku jsou v systému k dispozici dva nové příkazy:

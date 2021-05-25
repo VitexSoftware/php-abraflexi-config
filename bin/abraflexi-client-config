@@ -1,5 +1,5 @@
 #!/bin/bash
-php -f /usr/lib/php-abraflexi-config/abraflexi-config.php $1 $2 $3
+php -f /usr/lib/abraflexi-client-config/abraflexi-config.php $1 $2 $3
 
 
 

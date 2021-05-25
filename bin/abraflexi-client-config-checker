@@ -1,4 +1,3 @@
 #!/bin/bash
-php -f /usr/lib/php-abraflexi-config/abraflexi-checker.php
-
+php -f /usr/lib/abraflexi-client-config/abraflexi-checker.php
 

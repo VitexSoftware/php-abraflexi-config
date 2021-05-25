@@ -16,7 +16,7 @@
 /deb/
 /debian/.debhelper/nbproject
 /debian/.debhelper/
-/debian/php-abraflexi-config.substvars
-/debian/php-abraflexi-config.debhelper.log
-/debian/php-abraflexi-config.postrm.debhelper
-/debian/php-abraflexi-config/
+/debian/abraflexi-client-config.substvars
+/debian/abraflexi-client-config.debhelper.log
+/debian/abraflexi-client-config.postrm.debhelper
+/debian/abraflexi-client-config/
