@@ -1,30 +1,30 @@
 {
-  "name": "deb/abraflexi-config",
-  "description": "Configuration and configurator for FlexiPeeHP based tools",
+  "name": "deb/abraflexi-client-config",
+  "description": "Configurator and configuration shared with several abraflexi-tools",
+  "version": "1.1",
   "type": "project",
-  "version": "1.5",
+  "require": {
+    "deb/abraflexi": "*"
+  },
+  "license": "MIT",
   "authors": [
     {
       "name": "Vítězslav Dvořák",
       "email": "info@vitexsoftware.cz"
     }
   ],
-  "minimum-stability": "dev",
   "config": {
-    "vendor-dir": "/var/lib/abraflexi-client-config"
+    "vendor-dir": "/var/lib/composer/multi-abraflexi-setup"
   },
-  "require": {
-    "deb/ease-core": "*",
-    "deb/abraflexi": "*"
-  },
+  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "path",
-      "url": "/usr/share/php/EaseCore"
+      "url": "/usr/share/php/EaseCore/"
     },
     {
       "type": "path",
-      "url": "/usr/share/php/AbraFlexi"
+      "url": "/usr/share/php/AbraFlexi/"
     }
   ]
 }

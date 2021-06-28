@@ -4,7 +4,7 @@
 	dh $@
 
 override_dh_install:
-	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//' `'"'  debian/composer.json |sponge debian/conf/composer.json
+	jq '.version = "'`dpkg-parsechangelog | sed -n 's/^Version: //p'| sed 's/~.*//' `'"'  debian/conf/composer.json |sponge debian/conf/composer.json
 	dh_install
 	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-client-config/g' 	     debian/abraflexi-client-config/usr/share/abraflexi-client-config/abraflexi-checker.php
 	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-client-config/g' 	     debian/abraflexi-client-config/usr/share/abraflexi-client-config/abraflexi-config.php
