@@ -1,4 +1,4 @@
-debian/conf/composer.json       usr/share/abraflexi-client-config/
+debian/conf/composer.json       usr/lib/abraflexi-client-config/
 debian/conf/client.json         etc/abraflexi/
 src/*			        usr/share/abraflexi-client-config/
 bin/*                           usr/bin/
