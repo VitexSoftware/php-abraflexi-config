@@ -1,26 +1,23 @@
-![Package Logo](https://raw.githubusercontent.com/VitexSoftware/abraflexi-client-config/master/package_logo.png "Project Logo")
+![Package Logo](package_logo.png?raw=true "Project Logo")
 
 abraflexi-client-config
-===================
+=======================
 
 Konfigurátor a sdílená konfigurace pro aplikace využívající php-abraflexi
 
 [![Použití](http://img.youtube.com/vi/JJW6JAiqgAE/0.jpg)](http://www.youtube.com/watch?v=JJW6JAiqgAE)
-
-Instalace Docker
-----------------
-
-    docker pull vitexsoftware/abraflexi-client-config
 
 Instalace Debian/Ubuntu
 -----------------------
 
 Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
 
-    wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
-    echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
-    apt update
-    apt install abraflexi-client-config
+```shell
+wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
+echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
+apt update
+apt install abraflexi-client-config
+```
 
 Youtube:
 [![Instalace](http://img.youtube.com/vi/pToYZfh3dFE/0.jpg)](http://www.youtube.com/watch?v=pToYZfh3dFE)
