@@ -31,7 +31,7 @@ switch ($argc) {
         break;
         default :
         echo 'Usage: ';
-        echo "       ".basename(__FILE__)."                                  -  print current config";
+        echo "       ".basename(__FILE__)."                                   -  print current config";
         echo "       ".basename(__FILE__)." ABRAFLEXI_URL                     -  print given key's value";
         echo "       ".basename(__FILE__)." ABRAFLEXI_URL http://server:port  -  set given key's to value";
         break;
