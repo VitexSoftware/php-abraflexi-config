@@ -7,7 +7,7 @@ CONFIGFILE=/etc/abraflexi/client.json
 set -e
 . /usr/share/debconf/confmodule
 
-composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/abraflexi-client-config
+composer-debian abraflexi-client-config
 
 if [ "$1" = "configure" ]; then
 
