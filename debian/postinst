@@ -10,7 +10,6 @@ set -e
 composer-debian abraflexi-client-config
 
 if [ "$1" = "configure" ]; then
-
     db_get abraflexi-client-config/ABRAFLEXI_URL
     abraflexi-client-config ABRAFLEXI_URL $RET
     db_get abraflexi-client-config/ABRAFLEXI_LOGIN
@@ -19,10 +18,13 @@ if [ "$1" = "configure" ]; then
     abraflexi-client-config ABRAFLEXI_PASSWORD $RET
     db_get abraflexi-client-config/ABRAFLEXI_COMPANY
     abraflexi-client-config ABRAFLEXI_COMPANY $RET
+
+    abraflexi-client-config/STATIC_ABRAFLEXI_CONFIG
+    if [ "$RET" = "true" ]; then
+	abraflexi-config-export > /etc/profile.d/abraflexi-client.sh
+    fi
+
 fi
-
-
-abraflexi-config-export > /etc/profile.d/abraflexi-client.sh
 
 abraflexi-client-config-checker
 
