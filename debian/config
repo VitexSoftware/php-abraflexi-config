@@ -13,9 +13,6 @@ if [ -f $CONFIGFILE ]; then
     echo $CONFIGFILE exist. Loaing values from it
     # Store values from config file into
     # debconf db.
-
-    composer --no-plugins --no-scripts --no-dev -o install -d /usr/share/abraflexi-client-config
-
     db_set abraflexi-client-config/ABRAFLEXI_URL "`abraflexi-client-config ABRAFLEXI_URL`"
     db_set abraflexi-client-config/ABRAFLEXI_LOGIN "`abraflexi-client-config ABRAFLEXI_LOGIN`"
     db_set abraflexi-client-config/ABRAFLEXI_PASSWORD "`abraflexi-client-config ABRAFLEXI_PASSWORD`"
