@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ ! -f /var/lib/composer/abraflexi-client-config/autoload.php ]; then
+    composer-debian abraflexi-client-config
+fi
+
 php -f /usr/share/abraflexi-client-config/abraflexi-config.php $1 $2 $3
 
 
