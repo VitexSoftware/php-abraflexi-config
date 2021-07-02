@@ -8,29 +8,14 @@ set -e
 
 db_version 2.0
 
-# Load config file, if it exists.
-if [ -f $CONFIGFILE ]; then
-    echo $CONFIGFILE exist. Loaing values from it
-    # Store values from config file into
-    # debconf db.
-    db_set abraflexi-client-config/ABRAFLEXI_URL "`abraflexi-client-config ABRAFLEXI_URL`"
-    db_set abraflexi-client-config/ABRAFLEXI_LOGIN "`abraflexi-client-config ABRAFLEXI_LOGIN`"
-    db_set abraflexi-client-config/ABRAFLEXI_PASSWORD "`abraflexi-client-config ABRAFLEXI_PASSWORD`"
-    db_set abraflexi-client-config/ABRAFLEXI_COMPANY "`abraflexi-client-config ABRAFLEXI_COMPANY`"
-fi
-
 # Ask questions.
+db_input critical abraflexi-client-config/ABRAFLEXI_URL || true
+db_input critical abraflexi-client-config/ABRAFLEXI_LOGIN || true
+db_input critical abraflexi-client-config/ABRAFLEXI_PASSWORD || true
+db_input critical abraflexi-client-config/ABRAFLEXI_COMPANY || true
+
 db_input critical abraflexi-client-config/ENVIRONMENT_ABRAFLEXI_CONFIG || true
 db_input critical abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG || true
 
-# Check their answer.
-db_get abraflexi-client-config/ENVIRONMENT_ABRAFLEXI_CONFIG
-if [ "$RET" = "true" ]; then
-    db_input critical abraflexi-client-config/ABRAFLEXI_URL || true
-    db_input critical abraflexi-client-config/ABRAFLEXI_LOGIN || true
-    db_input critical abraflexi-client-config/ABRAFLEXI_PASSWORD || true
-    db_input critical abraflexi-client-config/ABRAFLEXI_COMPANY || true
-    db_go
-fi
-
 db_go || true
+
