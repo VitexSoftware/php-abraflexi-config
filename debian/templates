@@ -1,8 +1,16 @@
-Template: abraflexi-client-config/STATIC_ABRAFLEXI_CONFIG
+Template: abraflexi-client-config/ENVIRONMENT_ABRAFLEXI_CONFIG
 Type: boolean
 Default: true
-_Description: create static configuration ?
- Say yes if you do not have preconfigured environment
+_Description: Publish configuration as environment variables ?
+ Say yes if you need preconfigured environment
+
+Template: abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG
+Type: boolean
+Default: true
+_Description: Publish configuration as apache configuration ?
+ Say yes if you need configure apache environment
+
+
 
 Template: abraflexi-client-config/ABRAFLEXI_URL
 Type: string

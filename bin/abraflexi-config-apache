@@ -9,13 +9,14 @@ else
 fi
 
 if [ -f "$CONFFILE" ]; then
+    echo "<IfModule mod_env.c>"
     for KEY in $(jq -r 'keys[]' ${CONFFILE})
     do
-        echo export ${KEY}="`jq -r '.'$KEY ${CONFFILE}`"
+        echo ${KEY}="`jq -r '.'$KEY ${CONFFILE}`"
     done
-
+    echo "</IfModule>"
 else 
-    echo "$CONFFILE does not exist. Please specify another one" 1>&2;
+    echo "$CONFFILE does not exist. Please specify another one"  1>&2;
 fi
 
 
