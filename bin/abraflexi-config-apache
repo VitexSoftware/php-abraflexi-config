@@ -12,12 +12,9 @@ if [ -f "$CONFFILE" ]; then
     echo "<IfModule mod_env.c>"
     for KEY in $(jq -r 'keys[]' ${CONFFILE})
     do
-        echo ${KEY}="`jq -r '.'$KEY ${CONFFILE}`"
+        echo SetEnv ${KEY} "`jq -r '.'$KEY ${CONFFILE}`"
     done
     echo "</IfModule>"
 else 
     echo "$CONFFILE does not exist. Please specify another one"  1>&2;
 fi
-
-
-

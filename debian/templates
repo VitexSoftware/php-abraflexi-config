@@ -10,8 +10,6 @@ Default: true
 _Description: Publish configuration as apache configuration ?
  Say yes if you need configure apache environment
 
-
-
 Template: abraflexi-client-config/ABRAFLEXI_URL
 Type: string
 Default: https://demo.flexibee.eu

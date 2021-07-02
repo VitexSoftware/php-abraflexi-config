@@ -24,6 +24,12 @@ if [ "$1" = "configure" ]; then
 	abraflexi-config-export > /etc/profile.d/abraflexi-client.sh
     fi
 
+    db_get abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG
+    if [ "$RET" = "true" ]; then
+	mkdir -p /etc/apache2/conf-available
+	abraflexi-config-export > /etc/apache2/conf-available/abraflexi_env.conf
+    fi
+
 fi
 
 abraflexi-client-config-checker

@@ -20,7 +20,8 @@ if [ -f $CONFIGFILE ]; then
 fi
 
 # Ask questions.
-db_input critical abraflexi-client-config/STATIC_ABRAFLEXI_CONFIG || true
+db_input critical abraflexi-client-config/ENVIRONMENT_ABRAFLEXI_CONFIG || true
+db_input critical abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG || true
 
 # Check their answer.
 db_get abraflexi-client-config/STATIC_ABRAFLEXI_CONFIG
