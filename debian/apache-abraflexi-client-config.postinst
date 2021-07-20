@@ -1,0 +1,25 @@
+#!/bin/sh
+# postinst script for abraflexi-client-config
+
+#export DH_VERBOSE=1
+
+CONFIGFILE=/etc/abraflexi/client.json
+set -e
+. /usr/share/debconf/confmodule
+
+composer-debian abraflexi-client-config
+
+if [ "$1" = "configure" ]; then
+
+    db_get abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG
+    if [ "$RET" = "true" ]; then
+	abraflexi-config-apache > /etc/apache2/conf-available/abraflexi_env.conf
+        a2enmod env 
+        a2enconf abraflexi_env
+    fi
+fi
+
+
+#DEBHELPER#
+
+exit 0

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the php-abraflexi-config package.
+# This file is distributed under the same license as the abraflexi-client-config package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: php-abraflexi-config\n"
-"Report-Msgid-Bugs-To: php-abraflexi-config@packages.debian.org\n"
-"POT-Creation-Date: 2020-04-29 12:58+0200\n"
+"Project-Id-Version: abraflexi-client-config\n"
+"Report-Msgid-Bugs-To: abraflexi-client-config@packages.debian.org\n"
+"POT-Creation-Date: 2021-07-20 22:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,60 +20,72 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:1001
-msgid "create static configuration ?"
+msgid "Publish configuration as environment variables ?"
 msgstr ""
 
 #. Type: boolean
 #. Description
 #: ../templates:1001
-msgid "Say yes if you do not have preconfigured environment"
+msgid "Say yes if you need preconfigured environment"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid "Publish configuration as apache configuration ?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates:2001
+msgid "Say yes if you need configure apache environment"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:2001
+#: ../templates:3001
 msgid "AbraFlexi API URL:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:2001
+#: ../templates:3001
 msgid ""
 "URL with protocol, hostname and optional port ( https://localhost:5434 )"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:3001
+#: ../templates:4001
 msgid "AbraFlexi API Username:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:3001
+#: ../templates:4001
 msgid "User with prermisson to use REST API"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid "AbraFlexi API password:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid "Password for user with prermisson to use REST API"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:5001
+#: ../templates:6001
 msgid "Selected company:"
 msgstr ""
 
 #. Type: string
 #. Description
-#: ../templates:5001
+#: ../templates:6001
 msgid "First company opened by default"
 msgstr ""

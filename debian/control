@@ -17,3 +17,14 @@ Priority: optional
 Description: config and configurator for php-abraflexi
  Setup and probe shared configuration for AbraFlexi based
  tools
+
+Package: apache-abraflexi-client-config
+Replaces: php-abraflexi-config
+Depends: ${misc:Depends},abraflexi-client-config, apache2
+Architecture: all
+Section: web
+Priority: optional
+Description: Apache configuration for abraflexi related applications
+ Setup and probe shared configuration for AbraFlexi based
+ web app
+

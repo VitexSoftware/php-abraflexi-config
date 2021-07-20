@@ -24,16 +24,6 @@ if [ "$1" = "configure" ]; then
 	abraflexi-config-export > /etc/profile.d/abraflexi-client.sh
     fi
 
-    db_get abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG
-    if [ "$RET" = "true" ]; then
-	abraflexi-config-export > /etc/profile.d/abraflexi-client.sh
-    fi
-
-    db_get abraflexi-client-config/APACHE_ABRAFLEXI_CONFIG
-    if [ "$RET" = "true" ]; then
-	abraflexi-config-apache > /etc/apache2/conf-available/abraflexi_env.conf
-        echo enable apache configuration by: a2enmod env; a2enconf abraflexi_env
-    fi
 fi
 
 abraflexi-client-config-checker
