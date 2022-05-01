@@ -20,3 +20,6 @@
 /debian/abraflexi-client-config.debhelper.log
 /debian/abraflexi-client-config.postrm.debhelper
 /debian/abraflexi-client-config/
+/debian/apache-abraflexi-client-config.substvars
+/debian/apache-abraflexi-client-config.postrm.debhelper
+/debian/apache-abraflexi-client-config.debhelper.log
