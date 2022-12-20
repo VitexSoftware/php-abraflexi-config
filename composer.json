@@ -9,6 +9,10 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "spojenet/flexibee": "2.0.x-dev"
-    }
+        "spojenet/flexibee": "dev-main"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*"
+    },
 }
