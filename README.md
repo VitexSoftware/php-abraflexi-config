@@ -15,8 +15,8 @@ Pro Linux jsou k dispozici .deb balíčky. Prosím použijte repo:
 ```shell
 sudo apt install lsb-release wget apt-transport-https bzip2
 
-sudo wget -O /usr/share/keyrings/vitexsoftware.gpg https://repo.vitexsoftware.cz/keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/vitexsoftware.gpg]  https://repo.vitexsoftware.cz  $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
+sudo wget -O /usr/share/keyrings/vitexsoftware.gpg https://repo.vitexsoftware.com/keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/vitexsoftware.gpg]  https://repo.vitexsoftware.com  $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/vitexsoftware.list
 sudo apt update
 
 sudo apt install abraflexi-client-config
