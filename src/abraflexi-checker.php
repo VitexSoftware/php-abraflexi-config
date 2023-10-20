@@ -29,7 +29,9 @@ $info = is_array($infoRaw) && !array_key_exists('message', $infoRaw) ? \Ease\Fun
 $myCompany = $checker->getCompany();
 $checker->logBanner();
 
-$checker->addStatusMessage('connection test',
-        array_key_exists($myCompany, $info) ? 'success' : 'error' );
+$checker->addStatusMessage(
+    'connection test',
+    array_key_exists($myCompany, $info) ? 'success' : 'error'
+);
 
 return( array_key_exists($myCompany, $info) ? 0 : 1 );

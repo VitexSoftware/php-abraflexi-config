@@ -1,4 +1,5 @@
 <?php
+
 require_once '../vendor/autoload.php';
 define('EASE_APPNAME', 'php-abraflexi-config');
 
@@ -13,7 +14,7 @@ if (file_exists($configFile)) {
 switch ($argc) {
     case 1:
         foreach ($shared->configuration as $configKey => $configValue) {
-            echo sprintf("%-20s%s\n", $configKey.':', $configValue);
+            echo sprintf("%-20s%s\n", $configKey . ':', $configValue);
         }
         break;
     case 2:
@@ -23,17 +24,19 @@ switch ($argc) {
         break;
     case 3:
         $shared->setConfigValue($argv[1], $argv[2]);
-        $result = file_put_contents($configFile,
-            json_encode($shared->configuration, JSON_PRETTY_PRINT));
+        $result = file_put_contents(
+            $configFile,
+            json_encode($shared->configuration, JSON_PRETTY_PRINT)
+        );
         if ($result === false) {
             $exitcode = 1;
         }
         break;
-        default :
+    default:
         echo 'Usage: ';
-        echo "       ".basename(__FILE__)."                                   -  print current config";
-        echo "       ".basename(__FILE__)." ABRAFLEXI_URL                     -  print given key's value";
-        echo "       ".basename(__FILE__)." ABRAFLEXI_URL http://server:port  -  set given key's to value";
+        echo "       " . basename(__FILE__) . "                                   -  print current config";
+        echo "       " . basename(__FILE__) . " ABRAFLEXI_URL                     -  print given key's value";
+        echo "       " . basename(__FILE__) . " ABRAFLEXI_URL http://server:port  -  set given key's to value";
         break;
 }
 
