@@ -1,0 +1,10 @@
+#!/bin/sh
+# postinst script for abraflexi-client-config
+set -e
+
+. /usr/share/debconf/confmodule
+
+for file in `ls -usr/share/abraflexi-client-config/multiflexi/*.json`
+do
+	multiflexi-json2app $file
+done

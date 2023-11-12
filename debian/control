@@ -18,6 +18,14 @@ Description: config and configurator for php-abraflexi
  Setup and probe shared configuration for AbraFlexi based
  tools
 
+Package: multiflexi-abraflexi-client-config
+Depends: abraflexi-client-config, multiflexi
+Architecture: all
+Section: web
+Priority: optional
+Description: Install AbraFlexi Checker into MultiFlexi
+ Diagnostic tool for MultiFlexi
+
 Package: apache-abraflexi-client-config
 Replaces: php-abraflexi-config
 Depends: ${misc:Depends},abraflexi-client-config, apache2
