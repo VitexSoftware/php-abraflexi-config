@@ -1,0 +1,7 @@
+debian/conf/composer.json       usr/lib/abraflexi-client-check/
+src/*			        usr/share/abraflexi-client-check/
+
+bin/abraflexi-client-config-checker usr/bin/
+
+
+

@@ -18,8 +18,17 @@ Description: config and configurator for php-abraflexi
  Setup and probe shared configuration for AbraFlexi based
  tools
 
-Package: multiflexi-abraflexi-client-config
-Depends: abraflexi-client-config, multiflexi
+Package: abraflexi-client-check
+Depends: ${misc:Depends},php-spojenet-abraflexi, composer, php-cli, jq
+Suggests: abraflexi-server
+Architecture: all
+Section: web
+Priority: optional
+Description: Check php-abraflexi functionality
+ Probe configuration for php-abraflexi based tools
+
+Package: multiflexi-abraflexi-client-check
+Depends: abraflexi-client-check, multiflexi
 Architecture: all
 Section: web
 Priority: optional

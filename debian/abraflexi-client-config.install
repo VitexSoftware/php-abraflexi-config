@@ -3,7 +3,6 @@ debian/conf/client.json         etc/abraflexi/
 src/*			        usr/share/abraflexi-client-config/
 
 bin/abraflexi-client-config         usr/bin/
-bin/abraflexi-client-config-checker usr/bin/ 
-bin/abraflexi-client-reconfigure    usr/bin/ 
+bin/abraflexi-client-reconfigure    usr/bin/
 bin/abraflexi-config-export         usr/bin/
 
