@@ -4,7 +4,8 @@ set -e
 . /usr/share/debconf/confmodule
 case "$1" in
     remove)
-        for file in `ls /usr/share/multiflexi-abraflexi-client-check/multiflexi/*.json`
+        APPLICATION=`echo $DPKG_MAINTSCRIPT_PACKAGE | sed 's/multiflexi-//'`
+        for file in `ls /usr/lib/$APPLICATION/multiflexi/*.json`
         do
           multiflexi-json-app-remover $file
         done

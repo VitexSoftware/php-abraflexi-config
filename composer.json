@@ -14,5 +14,5 @@
     "require-dev": {
         "phpunit/phpunit": "*",
         "phpstan/phpstan": "*"
-    },
+    }
 }
