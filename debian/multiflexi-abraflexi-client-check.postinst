@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for abraflexi-client-config
+# postinst script for multiflexi-abraflexi-client-check
 set -e
 
 . /usr/share/debconf/confmodule

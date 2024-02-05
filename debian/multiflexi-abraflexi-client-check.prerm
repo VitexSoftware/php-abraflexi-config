@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for multiflexi-abraflexi-client-config
+# prerm script for multiflexi-abraflexi-client-check
 set -e
 . /usr/share/debconf/confmodule
 case "$1" in
