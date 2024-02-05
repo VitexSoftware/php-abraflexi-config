@@ -23,3 +23,10 @@
 /debian/apache-abraflexi-client-config.substvars
 /debian/apache-abraflexi-client-config.postrm.debhelper
 /debian/apache-abraflexi-client-config.debhelper.log
+/debian/abraflexi-client-check.debhelper.log
+/debian/abraflexi-client-check.substvars
+/debian/abraflexi-client-check/
+/debian/apache-abraflexi-client-config/
+/debian/multiflexi-abraflexi-client-check/
+/debian/multiflexi-abraflexi-client-check.substvars
+/debian/multiflexi-abraflexi-client-check.debhelper.log
