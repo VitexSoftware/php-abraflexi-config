@@ -1,32 +1,5 @@
 #!groovy
 
-import hudson.EnvVars
-import hudson.slaves.EnvironmentVariablesNodeProperty
-import hudson.slaves.NodeProperty
-import hudson.slaves.NodePropertyDescriptor
-import hudson.util.DescribableList
-import jenkins.model.Jenkins
-
-public createGlobalEnvironmentVariables(String key, String value) {
-    Jenkins instance = Jenkins.getInstance()
-
-    DescribableList<NodeProperty<?>, NodePropertyDescriptor> globalNodeProperties = instance.getGlobalNodeProperties()
-    List<EnvironmentVariablesNodeProperty> envVarsNodePropertyList = globalNodeProperties.getAll(EnvironmentVariablesNodeProperty.class)
-
-    EnvironmentVariablesNodeProperty newEnvVarsNodeProperty = null
-    EnvVars envVars = null
-
-    if ( envVarsNodePropertyList == null || envVarsNodePropertyList.size() == 0 ) {
-        newEnvVarsNodeProperty = new hudson.slaves.EnvironmentVariablesNodeProperty()
-        globalNodeProperties.add(newEnvVarsNodeProperty)
-        envVars = newEnvVarsNodeProperty.getEnvVars()
-       } else {
-        envVars = envVarsNodePropertyList.get(0).getEnvVars()
-    }
-    envVars.put(key, value)
-    instance.save()
-}
-
 String[] distributions = ['debian:bullseye', 'debian:bookworm', 'ubuntu:jammy']
 
 String vendor = 'vitexsoftware'
@@ -87,11 +60,7 @@ distributions.each {
                     sh 'echo "deb [trusted=yes] file://///$WORKSPACE/dist/debian/ ./" | sudo tee /etc/apt/sources.list.d/local.list'
                     sh 'sudo apt-get update --allow-releaseinfo-change'
                     sh 'echo "INSTALATION"'
-                    createGlobalEnvironmentVariables('ABRAFLEXI_URL', 'https://demo.flexibee.eu:5434')
-                    createGlobalEnvironmentVariables('ABRAFLEXI_LOGIN', 'winstrom')
-                    createGlobalEnvironmentVariables('ABRAFLEXI_PASSWORD', 'winstrom')
-                    createGlobalEnvironmentVariables('ABRAFLEXI_COMPANY', 'demo')
-                    sh 'IFS="\n\b"; for package in  `ls $WORKSPACE/dist/debian/ | grep .deb | awk -F_ \'{print \$1}\'` ; do  echo -e "${GREEN} installing ${package} on `lsb_release -sc` ${ENDCOLOR} " ; sudo  DEBIAN_FRONTEND=noninteractive debconfDebug=' + debconfDebug  + ' apt-get -y install $package ; done;'
+                    sh 'ABRAFLEXI_URL=https://demo.flexibee.eu:5434 ABRAFLEXI_LOGIN=winstrom ABRAFLEXI_PASSWORD=winstrom ABRAFLEXI_COMPANY=demo_de IFS="\n\b"; for package in  `ls $WORKSPACE/dist/debian/ | grep .deb | awk -F_ \'{print \$1}\'` ; do  echo -e "${GREEN} installing ${package} on `lsb_release -sc` ${ENDCOLOR} " ; sudo  DEBIAN_FRONTEND=noninteractive debconfDebug=' + debconfDebug  + ' apt-get -y install $package ; done;'
                     stash includes: 'dist/**', name: 'dist-' + distroCodename
                 }
             }
