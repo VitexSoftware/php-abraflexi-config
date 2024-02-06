@@ -1,7 +1,7 @@
 {
   "name": "deb/abraflexi-client-config",
   "description": "Configurator and configuration shared with several abraflexi-tools",
-  "version": "1.7",
+  "version": "1.7.1",
   "type": "project",
   "require": {
     "deb/abraflexi": "*"

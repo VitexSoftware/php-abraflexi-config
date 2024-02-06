@@ -7,7 +7,6 @@
 /testing/PHPUnit/build/
 /debian/flexplorer/
 /vendor/
-/composer.lock
 /.vagrant/
 /ubuntu-zesty-17.04-cloudimg-console.log
 /php-flexibee-config-build-deps_0.0_all.deb
