@@ -9,7 +9,7 @@ override_dh_install:
 	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-client-config/g' 	     debian/abraflexi-client-config/usr/share/abraflexi-client-config/*.php
 	sed -i -e 's/\.\./\/etc\/abraflexi/g' 	     debian/abraflexi-client-config/usr/share/abraflexi-client-config/*.php
 
-	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-client-config/g'   debian/abraflexi-matcher/usr/lib/abraflexi-client-config/*.php
+	sed -i -e 's/..\/vendor/\/var\/lib\/composer\/abraflexi-client-config/g'   debian/abraflexi-client-config/usr/lib/abraflexi-client-config/*.php
 	sed -i -e 's/\.\.\/.env//g'  debian/abraflexi-client-config/usr/lib/abraflexi-client-config/*.php
 
 
