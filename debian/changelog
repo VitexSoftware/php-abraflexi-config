@@ -1,5 +1,6 @@
-abraflexi-client-config (1.7) UNRELEASED; urgency=medium
+abraflexi-client-config (1.7.1) UNRELEASED; urgency=medium
 
+  [ CyberVitexus ]
   * Try to use existing config file as defaults 
   * Works now
   * abraflexi-client-config can be configured using environment
@@ -14,7 +15,10 @@ abraflexi-client-config (1.7) UNRELEASED; urgency=medium
   * renamed to abraflexi-client-config
   * apache support added
 
- -- CyberVitexus <vitex@exiv.jinonice.czf>  Fri, 02 Jul 2021 12:49:20 +0200
+  [ vitex ]
+  * path fix
+
+ -- vitex <info@vitexsoftware.cz>  Tue, 06 Feb 2024 08:15:14 +0100
 
 abraflexi-client-config (0.10) EXPERIMENTAL; urgency=medium
 

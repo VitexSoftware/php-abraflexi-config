@@ -4,7 +4,6 @@ namespace AbraFlexi;
 
 require_once '../vendor/autoload.php';
 define('EASE_APPNAME', 'php-abraflexi-checker');
-define('EASE_LOGGER', 'console|syslog');
 
 $shared = new \Ease\Shared();
 
