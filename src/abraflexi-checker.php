@@ -9,15 +9,7 @@ $shared = new \Ease\Shared();
 
 $status = [];
 
-if (empty(\Ease\Functions::cfg('ABRAFLEXI_URL'))) {
-    $cfgFile = '../client.json';
-    if (file_exists($cfgFile)) {
-        $loaded = $shared->loadConfig($cfgFile, true);
-        $status[empty($loaded) ? 'warning' : 'success'] = 'Loading config file ' . $cfgFile . ' ' . count($loaded) . ' items loaded';
-    }
-} else {
-    $status['info'] = 'loading configuration from environment';
-}
+\Ease\Shared::init(['ABRAFLEXI_URL', 'ABRAFLEXI_LOGIN', 'ABRAFLEXI_PASSWORD', 'ABRAFLEXI_COMPANY'], file_exists('../.env') ? '../.env' : null);
 
 $checker = new Company();
 
