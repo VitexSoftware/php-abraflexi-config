@@ -5,6 +5,7 @@
     "executable": "\/usr\/bin\/abraflexi-client-config-checker",
     "setup": "",
     "cmdparams": "",
+    "requirements": "AbraFlexi",
     "deploy": "apt install abraflexi-client-config",
     "homepage": "https://github.com/VitexSoftware/php-abraflexi-config",
     "uuid": "35478b99-c65f-4cdd-9ee1-744c55d9ac03",
