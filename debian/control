@@ -9,7 +9,7 @@ Homepage: https://github.com/VitexSoftware/php-abraflexi-config
 
 Package: abraflexi-client-config
 Replaces: php-abraflexi-config
-Depends: ${misc:Depends},php-spojenet-abraflexi, composer, php-cli, jq
+Depends: ${misc:Depends},php-spojenet-abraflexi, composer, php-cli, jq, abraflexi-client-check
 Suggests: abraflexi-server
 Architecture: all
 Section: web
