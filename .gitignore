@@ -29,3 +29,4 @@
 /debian/multiflexi-abraflexi-client-check/
 /debian/multiflexi-abraflexi-client-check.substvars
 /debian/multiflexi-abraflexi-client-check.debhelper.log
+/.build/
