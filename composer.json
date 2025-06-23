@@ -9,10 +9,10 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "spojenet/flexibee": "dev-main"
+        "spojenet/flexibee": "^3.5"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
-        "phpstan/phpstan": "*"
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.0"
     }
 }
