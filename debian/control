@@ -37,11 +37,10 @@ Description: Install AbraFlexi Checker into MultiFlexi
 
 Package: apache-abraflexi-client-config
 Replaces: php-abraflexi-config
-Depends: ${misc:Depends},abraflexi-client-config, apache2
+Depends: ${misc:Depends},abraflexi-client-config, apache2, jq
 Architecture: all
 Section: web
 Priority: optional
 Description: Apache configuration for abraflexi related applications
  Setup and probe shared configuration for AbraFlexi based
  web app
-
