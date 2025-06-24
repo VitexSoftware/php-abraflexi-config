@@ -15,28 +15,32 @@ declare(strict_types=1);
 
 namespace AbraFlexi;
 
+use Abraflexi\Company;
+use Ease\Functions;
+use Ease\Shared;
+
 require_once '../vendor/autoload.php';
 \define('EASE_APPNAME', 'AbraFlexiConnectionChecker');
 
-\Ease\Shared::init([], '../.env');
+Shared::init([], '../.env');
 
 $options = getopt('o::e::', ['output::environment::']);
 Shared::init(
     [
-        'ABRAFLEXI_URL', 'ABRAFLEXI_LOGIN', 'ABRAFLEXI_PASSWORD', 'ABRAFLEXI_COMPANY'
+        'ABRAFLEXI_URL', 'ABRAFLEXI_LOGIN', 'ABRAFLEXI_PASSWORD', 'ABRAFLEXI_COMPANY',
     ],
     \array_key_exists('environment', $options) ? $options['environment'] : (\array_key_exists('e', $options) ? $options['e'] : '../.env'),
 );
 $destination = \array_key_exists('o', $options) ? $options['o'] : (\array_key_exists('output', $options) ? $options['output'] : Shared::cfg('RESULT_FILE', 'php://stdout'));
 
 $now = new DateTime();
-$report['source'] = \Ease\Shared::appName().' '. \Ease\Shared::appVersion().' '.
-$report['when'] =  $now->format('Y-m-d').' '.$now->format('H:i:s');
+$report['source'] = Shared::appName().' '.Shared::appVersion().' '.
+$report['when'] = $now->format('Y-m-d').' '.$now->format('H:i:s');
 
 $checker = new Company();
 
 $infoRaw = $checker->getFlexiData();
-$info = \is_array($infoRaw) && !\array_key_exists('message', $infoRaw) ? \Ease\Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
+$info = \is_array($infoRaw) && !\array_key_exists('message', $infoRaw) ? Functions::reindexArrayBy($infoRaw, 'dbNazev') : [];
 $myCompany = $checker->getCompany();
 
 if (Shared::cfg('APP_DEBUG', false)) {
