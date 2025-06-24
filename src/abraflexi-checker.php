@@ -15,7 +15,6 @@ declare(strict_types=1);
 
 namespace AbraFlexi;
 
-use Abraflexi\Company;
 use Ease\Functions;
 use Ease\Shared;
 
